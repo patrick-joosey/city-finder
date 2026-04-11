@@ -43,9 +43,9 @@ export const formulas = {
   },
   healthWellness: {
     name: "Health & Wellness",
-    description: "Composite of hospital access (0-3), integrative practitioners, and mental health services availability.",
-    formula: "min(10, hospitalScore * 1.5 + integrativePractitioners * 0.3 + mentalHealthScore * 1.5)",
-    compute: (m) => Math.min(10, Math.max(1, m.hospitalScore * 1.5 + m.integrativePractitioners * 0.3 + m.mentalHealthScore * 1.5)),
+    description: "Composite of hospital access (0-3), integrative practitioners (log-scaled), and mental health services. Requires BOTH strong hospitals AND a massive integrative scene to hit 10 - a city without real hospital access caps out regardless of practitioner count.",
+    formula: "min(10, hospitalScore * 0.9 + mentalHealthScore * 0.9 + log2(integrativePractitioners + 1) * 0.8)",
+    compute: (m) => Math.min(10, Math.max(1, m.hospitalScore * 0.9 + m.mentalHealthScore * 0.9 + Math.log2((m.integrativePractitioners || 0) + 1) * 0.8)),
     metrics: [
       { key: "hospitalScore", label: "Hospital access (1=basic, 2=good, 3=major systems)", unit: "/3" },
       { key: "integrativePractitioners", label: "Integrative/holistic health practitioners", unit: "est. count" },

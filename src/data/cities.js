@@ -23,64 +23,6 @@ const citiesRaw = [
       outdoorRec: 10,
       safety: 5,
     },
-    details: {
-      recovery: [
-        "Multiple AA/NA meeting locations with daily meetings",
-        "Boulder Recovery Center",
-        "Flatirons Recovery - outpatient programs",
-        "SMART Recovery groups",
-        "Sober living homes available",
-      ],
-      meditation: [
-        "Shambhala Mountain Center nearby",
-        "Boulder Shambhala Center",
-        "Spirit Rock affiliated groups",
-        "Multiple yoga/meditation studios",
-        "Naropa University - contemplative education",
-      ],
-      healthWellness: [
-        "Abundant naturopathic & integrative medicine clinics",
-        "Acupuncture and massage therapy centers",
-        "Float therapy and cryotherapy studios",
-        "Mental health and counseling services",
-        "Holistic health practitioners",
-      ],
-      gyms: [
-        "Movement Climbing + Fitness",
-        "Rallysport Health & Fitness",
-        "Boulder Rock Club",
-        "CrossFit gyms and boutique studios",
-        "CU Rec Center (community access)",
-      ],
-      nutrition: [
-        "Whole Foods, Natural Grocers, Lucky's Market",
-        "Farmer's markets year-round",
-        "Juice bars and smoothie shops everywhere",
-        "Farm-to-table restaurants",
-        "Strong organic food culture",
-      ],
-      socialCommunity: [
-        "Sober social events and meetups",
-        "Trail running and hiking groups",
-        "Community cycling rides",
-        "Volunteer organizations",
-        "Active Meetup.com scene for wellness",
-      ],
-      outdoorRec: [
-        "Flatirons hiking trails",
-        "Chautauqua Park",
-        "Boulder Creek Path",
-        "World-class rock climbing",
-        "Close to ski resorts (Eldora 30 min)",
-      ],
-      safety: [
-        "Property crime higher than expected (~34-41 per 1,000)",
-        "Violent crime relatively low for its size",
-        "Crime trending down 11% year-over-year",
-        "University area has higher incident rates",
-        "Well-lit trails and active community policing",
-      ],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,100",
     medianHome: "$850,000",
@@ -103,64 +45,6 @@ const citiesRaw = [
       socialCommunity: 7,
       outdoorRec: 9,
       safety: 4,
-    },
-    details: {
-      recovery: [
-        "Strong AA/NA community with many daily meetings",
-        "Veterans-focused recovery programs",
-        "Cedar Springs Behavioral Health",
-        "AspenPointe behavioral health services",
-        "Multiple sober living facilities",
-      ],
-      meditation: [
-        "Several yoga studios with meditation classes",
-        "Dharma Ocean Foundation nearby",
-        "Mountain meditation retreats",
-        "Church-affiliated contemplative groups",
-        "Growing mindfulness community",
-      ],
-      healthWellness: [
-        "UCHealth and Penrose-St. Francis hospitals",
-        "Olympic Training Center resources",
-        "Chiropractic and physical therapy clinics",
-        "Mental health services expanding",
-        "Integrative medicine options",
-      ],
-      gyms: [
-        "City Rock climbing gym",
-        "Multiple 24-hour fitness options",
-        "CrossFit and boutique fitness studios",
-        "Olympic Training Center",
-        "Incline fitness community",
-      ],
-      nutrition: [
-        "Natural Grocers locations",
-        "Growing farm-to-table scene",
-        "Farmer's markets (seasonal)",
-        "Health food stores",
-        "Juice bars emerging",
-      ],
-      socialCommunity: [
-        "Hiking and trail running groups",
-        "Incline community (daily regulars)",
-        "Military/veteran social groups",
-        "Church-based community activities",
-        "Outdoor adventure meetups",
-      ],
-      outdoorRec: [
-        "Garden of the Gods",
-        "Pikes Peak",
-        "The Incline",
-        "North Cheyenne Canon Park",
-        "Close to Monarch & Breckenridge skiing",
-      ],
-      safety: [
-        "Crime rate 96.5% higher than national average",
-        "Violent crime increased 12% (2022-2025)",
-        "Significant variation by neighborhood",
-        "North and west sides generally safer",
-        "Strong military/police presence in some areas",
-      ],
     },
     costOfLiving: "Moderate",
     medianRent: "$1,500",
@@ -185,64 +69,6 @@ const citiesRaw = [
       outdoorRec: 9,
       safety: 7,
     },
-    details: {
-      recovery: [
-        "Active AA/NA community",
-        "Harmony Foundation (renowned treatment center nearby)",
-        "SummitStone Health Partners",
-        "Sober social events growing",
-        "College recovery programs at CSU",
-      ],
-      meditation: [
-        "Fort Collins Shambhala Center",
-        "Yoga studios with meditation offerings",
-        "Mindfulness-Based Stress Reduction courses",
-        "Nature meditation along Poudre River",
-        "Growing contemplative community",
-      ],
-      healthWellness: [
-        "UCHealth Poudre Valley Hospital",
-        "Integrative health practitioners",
-        "Massage and bodywork studios",
-        "Mental health services via CSU",
-        "Functional medicine clinics",
-      ],
-      gyms: [
-        "Miramont Lifestyle Fitness",
-        "Climb Fort Collins (climbing gym)",
-        "Multiple CrossFit boxes",
-        "CSU Rec Center (community access)",
-        "Cycling-focused fitness",
-      ],
-      nutrition: [
-        "Natural Grocers, Whole Foods",
-        "Robust farmer's market scene",
-        "Farm-to-table restaurant culture",
-        "Co-ops and organic stores",
-        "Juice and smoothie bars",
-      ],
-      socialCommunity: [
-        "Incredible bike community",
-        "Trail running groups",
-        "Volunteer opportunities",
-        "Old Town social scene (sober-friendly)",
-        "CSU community events and talks",
-      ],
-      outdoorRec: [
-        "Horsetooth Reservoir",
-        "Rocky Mountain National Park (1 hr)",
-        "Cache la Poudre River (rafting, kayaking)",
-        "300+ miles of bike trails",
-        "Hiking in Lory State Park",
-      ],
-      safety: [
-        "~5.9 violent crimes per 1,000 residents",
-        "Most crime concentrated near CSU student housing",
-        "Generally considered safe for a mid-size city",
-        "Active community policing programs",
-        "Well-maintained public spaces and trails",
-      ],
-    },
     costOfLiving: "High",
     medianRent: "$1,700",
     medianHome: "$550,000",
@@ -265,64 +91,6 @@ const citiesRaw = [
       socialCommunity: 8,
       outdoorRec: 6,
       safety: 2,
-    },
-    details: {
-      recovery: [
-        "Highest concentration of AA/NA meetings in Denver",
-        "Multiple daily meetings within walking distance",
-        "Recovery Dharma and Refuge Recovery groups",
-        "Denver CARES detox facility accessible",
-        "Extensive sober living options in area",
-      ],
-      meditation: [
-        "Denver Shambhala Center nearby",
-        "Multiple yoga studios with meditation",
-        "Recovery Dharma (meditation-based recovery)",
-        "Insight Meditation community",
-        "Zen centers accessible",
-      ],
-      healthWellness: [
-        "Dense health services along Colfax and Broadway",
-        "Mental health clinics and counseling",
-        "Float labs and bodywork studios",
-        "Denver Health system accessible",
-        "Integrative medicine practitioners",
-      ],
-      gyms: [
-        "Multiple gyms within walking distance",
-        "Boutique fitness studios",
-        "CrossFit options",
-        "Denver Rec Centers nearby",
-        "Yoga studios everywhere",
-      ],
-      nutrition: [
-        "Natural grocers and health food stores",
-        "Juice bars and smoothie shops",
-        "Vegan/vegetarian dining options",
-        "Farmer's markets accessible",
-        "Sprouts and Whole Foods nearby",
-      ],
-      socialCommunity: [
-        "LGBTQ-friendly and inclusive community",
-        "Sober social events and meetups",
-        "Walkable social scene",
-        "Diverse community groups",
-        "Recovery community events",
-      ],
-      outdoorRec: [
-        "Cheesman Park and City Park nearby",
-        "Cherry Creek Trail accessible by bike",
-        "1 hour to ski resorts",
-        "Urban parks and green spaces",
-        "Bike-friendly streets",
-      ],
-      safety: [
-        "Highest crime in Denver neighborhoods",
-        "Property crime well above city average",
-        "Car break-ins and theft top concerns",
-        "Street-level awareness needed at night",
-        "Improving but still elevated risk",
-      ],
     },
     costOfLiving: "High",
     medianRent: "$1,643",
@@ -347,64 +115,6 @@ const citiesRaw = [
       outdoorRec: 8,
       safety: 4,
     },
-    details: {
-      recovery: [
-        "DACC central office at 2926 Zuni St",
-        "Multiple AA meetings in area",
-        "Short walk/ride to Capitol Hill meetings",
-        "Recovery community accessible",
-        "Sober-friendly restaurant scene",
-      ],
-      meditation: [
-        "Yoga studios with meditation classes",
-        "Mindfulness groups",
-        "Access to Denver Shambhala Center",
-        "Park-based meditation spaces",
-        "Growing contemplative community",
-      ],
-      healthWellness: [
-        "Boutique wellness studios",
-        "Integrative health practitioners",
-        "Mental health services",
-        "St. Anthony Hospital nearby",
-        "Massage and bodywork options",
-      ],
-      gyms: [
-        "Boutique fitness studios on 32nd Ave",
-        "CrossFit and HIIT studios",
-        "Yoga and Pilates studios",
-        "Running-friendly neighborhoods",
-        "Denver Rec Centers accessible",
-      ],
-      nutrition: [
-        "Strong health food scene on 32nd Ave",
-        "Whole Foods nearby",
-        "Farm-to-table restaurants",
-        "Juice bars and smoothie shops",
-        "Brunch culture with healthy options",
-      ],
-      socialCommunity: [
-        "Young professional community",
-        "Restaurant row social scene",
-        "Running and cycling groups",
-        "Family-friendly pockets",
-        "Community events and markets",
-      ],
-      outdoorRec: [
-        "Adjacent to Confluence Park",
-        "South Platte River Trail direct access",
-        "Bike paths throughout",
-        "1 hour to ski resorts",
-        "Sloan's Lake Park nearby",
-      ],
-      safety: [
-        "Crime above national average but moderate for Denver",
-        "Violent crime 183% above national (Denver-wide issue)",
-        "Safer feel than Capitol Hill or downtown",
-        "Well-lit streets and active restaurant scene",
-        "Improving steadily with development",
-      ],
-    },
     costOfLiving: "High",
     medianRent: "$1,961",
     medianHome: "$650,000",
@@ -427,64 +137,6 @@ const citiesRaw = [
       socialCommunity: 9,
       outdoorRec: 9,
       safety: 6,
-    },
-    details: {
-      recovery: [
-        "Meetings in adjacent neighborhoods",
-        "Short bike ride to Capitol Hill meeting clusters",
-        "Recovery community accessible city-wide",
-        "Sober social scene growing",
-        "Quiet residential setting supports recovery",
-      ],
-      meditation: [
-        "Yoga studios in area",
-        "Park-based meditation practice",
-        "South Pearl Street wellness shops",
-        "Mindfulness groups accessible",
-        "Peaceful residential setting",
-      ],
-      healthWellness: [
-        "South Pearl Street wellness corridor",
-        "Integrative health practitioners",
-        "Mental health services",
-        "Massage and bodywork studios",
-        "Rec center with pool and fitness",
-      ],
-      gyms: [
-        "Wash Park Rec Center",
-        "Multiple gyms and studios nearby",
-        "The park itself is a massive fitness hub",
-        "Running, cycling, and outdoor workout groups",
-        "Boutique fitness on South Pearl",
-      ],
-      nutrition: [
-        "South Pearl Street health food scene",
-        "Whole Foods and Natural Grocers accessible",
-        "Farm-to-table restaurants",
-        "Farmer's market",
-        "Juice bars and healthy cafes",
-      ],
-      socialCommunity: [
-        "Strong neighborhood community",
-        "Active outdoor lifestyle culture",
-        "Running and cycling groups in the park",
-        "South Pearl Street social scene",
-        "Community-oriented, slightly older demographic",
-      ],
-      outdoorRec: [
-        "165-acre Washington Park (two lakes, trails)",
-        "Running paths and rec center",
-        "Cherry Creek Trail accessible",
-        "Excellent cycling infrastructure",
-        "1 hour to ski resorts",
-      ],
-      safety: [
-        "Crime rates 22% below Denver average",
-        "One of Denver's safest neighborhoods",
-        "Residential character deters crime",
-        "Active community watch",
-        "Well-maintained and well-lit public spaces",
-      ],
     },
     costOfLiving: "Very High",
     medianRent: "$2,115",
@@ -509,64 +161,6 @@ const citiesRaw = [
       outdoorRec: 7,
       safety: 3,
     },
-    details: {
-      recovery: [
-        "AA/NA meetings in neighborhood and nearby Five Points",
-        "Active recovery community events",
-        "DACC meetings accessible",
-        "Recovery-friendly creative community",
-        "Growing sober social events",
-      ],
-      meditation: [
-        "Some yoga studios with meditation",
-        "Creative mindfulness workshops",
-        "Access to Denver meditation centers",
-        "Growing wellness offerings",
-        "Art-as-meditation community",
-      ],
-      healthWellness: [
-        "Several yoga and CrossFit studios",
-        "Growing wellness presence",
-        "Mental health services accessible",
-        "Bodywork and massage options",
-        "Emerging integrative health scene",
-      ],
-      gyms: [
-        "CrossFit and functional fitness studios",
-        "Yoga studios",
-        "Outdoor fitness along river trail",
-        "Growing gym presence with development",
-        "Denver Rec Centers accessible",
-      ],
-      nutrition: [
-        "Health-conscious restaurants emerging",
-        "Farm-to-table dining options",
-        "Farmer's markets",
-        "Some juice bars and health food",
-        "Brewery scene dominates but wellness growing",
-      ],
-      socialCommunity: [
-        "Vibrant arts and creative community",
-        "First Friday art walks",
-        "Music and cultural events",
-        "Creative industry networking",
-        "Rapidly growing social scene",
-      ],
-      outdoorRec: [
-        "South Platte River Trail access",
-        "Globeville Landing Park",
-        "Bike paths throughout",
-        "1 hour to ski resorts",
-        "Urban outdoor activities",
-      ],
-      safety: [
-        "Mixed safety - improving but property crime elevated",
-        "Car break-ins above average",
-        "Adjacent to higher-crime Five Points area",
-        "Gentrification improving some blocks",
-        "Street awareness recommended at night",
-      ],
-    },
     costOfLiving: "High",
     medianRent: "$2,076",
     medianHome: "$550,000",
@@ -589,64 +183,6 @@ const citiesRaw = [
       socialCommunity: 7,
       outdoorRec: 7,
       safety: 3,
-    },
-    details: {
-      recovery: [
-        "Multiple meetings accessible from central location",
-        "Short ride to Capitol Hill recovery hub",
-        "Recovery community growing",
-        "Central Denver location connects to many groups",
-        "Sober-friendly community spaces",
-      ],
-      meditation: [
-        "Yoga studios on South Broadway",
-        "Access to Denver meditation centers",
-        "Small mindfulness groups",
-        "Growing wellness culture",
-        "Creative community mindfulness",
-      ],
-      healthWellness: [
-        "Growing natural health options on South Broadway",
-        "Mental health and counseling services",
-        "Bodywork and massage studios",
-        "Denver Health accessible",
-        "Emerging wellness corridor",
-      ],
-      gyms: [
-        "Gyms along South Broadway",
-        "Boutique fitness studios",
-        "CrossFit options",
-        "Running-friendly streets",
-        "Denver Rec Centers nearby",
-      ],
-      nutrition: [
-        "Growing health food on South Broadway",
-        "Diverse restaurant scene",
-        "Natural grocers accessible",
-        "Farmer's markets nearby",
-        "Eclectic dining with healthy options",
-      ],
-      socialCommunity: [
-        "Artsy, eclectic community",
-        "Vintage shops and galleries",
-        "Live music and cultural events",
-        "Diverse and welcoming",
-        "Growing volunteer scene",
-      ],
-      outdoorRec: [
-        "Close to Platte River Trail",
-        "Ruby Hill Park",
-        "Bike lanes on Broadway",
-        "1 hour to ski resorts",
-        "Urban park access",
-      ],
-      safety: [
-        "Above-average crime for Denver",
-        "Ranks 14th of 78 Denver neighborhoods in violent crime",
-        "Street-level awareness needed",
-        "Some blocks better than others",
-        "Improving with development",
-      ],
     },
     costOfLiving: "High",
     medianRent: "$1,989",
@@ -671,64 +207,6 @@ const citiesRaw = [
       outdoorRec: 6,
       safety: 2,
     },
-    details: {
-      recovery: [
-        "Walking distance to Capitol Hill meetings",
-        "Denver CARES and CALC recovery center nearby",
-        "Multiple meeting locations accessible",
-        "Transit connects to all Denver meetings",
-        "Recovery Dharma groups accessible",
-      ],
-      meditation: [
-        "Corporate mindfulness programs",
-        "Yoga studios",
-        "Access to all Denver meditation centers via transit",
-        "Some hotel/wellness space offerings",
-        "Growing urban mindfulness scene",
-      ],
-      healthWellness: [
-        "Major hospital systems nearby",
-        "Corporate wellness facilities",
-        "Float labs and cryotherapy",
-        "Mental health services",
-        "Whole Foods and health resources",
-      ],
-      gyms: [
-        "Corporate gym chains (Equinox, etc.)",
-        "24 Hour Fitness locations",
-        "Boutique studios",
-        "Hotel fitness facilities",
-        "Denver Rec Centers accessible",
-      ],
-      nutrition: [
-        "Whole Foods at Union Station area",
-        "Juice bars downtown",
-        "Health-conscious lunch spots",
-        "Farmer's markets (seasonal)",
-        "Meal delivery services",
-      ],
-      socialCommunity: [
-        "More transient, less community feel",
-        "Sports and entertainment events",
-        "Meetup groups for professionals",
-        "Cultural institutions (museums, theaters)",
-        "Less neighborhood cohesion",
-      ],
-      outdoorRec: [
-        "Confluence Park at Platte River",
-        "Cherry Creek Trail access",
-        "Limited green space otherwise",
-        "1 hour to ski resorts",
-        "Urban biking infrastructure",
-      ],
-      safety: [
-        "Higher crime, especially property crime",
-        "Transient-related issues near 16th Street Mall",
-        "Transit hub areas higher risk",
-        "16th Street Mall reconstruction improving safety",
-        "Street awareness essential at night",
-      ],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,100",
     medianHome: "$500,000",
@@ -751,64 +229,6 @@ const citiesRaw = [
       socialCommunity: 8,
       outdoorRec: 10,
       safety: 5,
-    },
-    details: {
-      recovery: [
-        "AA meetings daily",
-        "Small but tight-knit recovery community",
-        "Axis Health System behavioral health",
-        "Sober outdoor adventure groups",
-        "Community-supported recovery",
-      ],
-      meditation: [
-        "Durango Dharma Center",
-        "Yoga studios with meditation",
-        "Hot springs meditation retreats nearby",
-        "Nature-based mindfulness practices",
-        "Small but dedicated meditation community",
-      ],
-      healthWellness: [
-        "Mercy Regional Medical Center",
-        "Integrative health practitioners",
-        "Hot springs (Trimble, Pagosa nearby)",
-        "Chiropractic and naturopathic care",
-        "Acupuncture and massage therapy",
-      ],
-      gyms: [
-        "Durango Community Rec Center",
-        "CrossFit Durango",
-        "Rock climbing gym",
-        "Animas River fitness activities",
-        "Fort Lewis College facilities",
-      ],
-      nutrition: [
-        "Nature's Oasis natural grocery",
-        "Durango Natural Foods Co-op",
-        "Farm-to-table restaurants",
-        "Farmer's market (summer)",
-        "Local organic farms",
-      ],
-      socialCommunity: [
-        "Very tight-knit outdoor community",
-        "Trail running and mountain biking groups",
-        "Kayaking and river community",
-        "Small-town supportive atmosphere",
-        "Outdoor adventure clubs",
-      ],
-      outdoorRec: [
-        "Purgatory Ski Resort",
-        "San Juan Mountains hiking",
-        "Animas River kayaking/rafting",
-        "World-class mountain biking",
-        "Million Dollar Highway scenic drives",
-      ],
-      safety: [
-        "Mixed crime data (~14 per 1,000 residents)",
-        "Northwest Durango considered safest area",
-        "Small-town feel helps community safety",
-        "Tourist areas see more property crime",
-        "Low violent crime overall",
-      ],
     },
     costOfLiving: "Moderate-High",
     medianRent: "$1,600",
@@ -833,64 +253,6 @@ const citiesRaw = [
       outdoorRec: 10,
       safety: 7,
     },
-    details: {
-      recovery: [
-        "AA meetings available",
-        "Small recovery community",
-        "Behavioral health services",
-        "Outdoor-based recovery activities",
-        "Regional treatment referrals",
-      ],
-      meditation: [
-        "Yoga studios with meditation classes",
-        "Nature-based mindfulness",
-        "Hot springs meditation practice",
-        "Small contemplative groups",
-        "Retreat opportunities nearby",
-      ],
-      healthWellness: [
-        "UCHealth Yampa Valley Medical Center",
-        "Strawberry Park Hot Springs",
-        "Old Town Hot Springs (community)",
-        "Massage and bodywork practitioners",
-        "Physical therapy and sports medicine",
-      ],
-      gyms: [
-        "Old Town Hot Springs (fitness center + pool)",
-        "Steamboat Tennis & Athletic Club",
-        "CrossFit options",
-        "Ski conditioning programs",
-        "Outdoor fitness culture",
-      ],
-      nutrition: [
-        "Bamboo Market natural foods",
-        "Farmer's market (summer)",
-        "Farm-to-table dining",
-        "Growing health food options",
-        "Local ranch-to-table meats",
-      ],
-      socialCommunity: [
-        "Strong ski community",
-        "Cycling and running groups",
-        "Ranching community heritage",
-        "Small-town feel, everyone knows everyone",
-        "Outdoor adventure groups",
-      ],
-      outdoorRec: [
-        "Steamboat Ski Resort",
-        "Yampa River tubing and fishing",
-        "Fish Creek Falls hiking",
-        "Hot springs soaking",
-        "Cross-country skiing and snowshoeing",
-      ],
-      safety: [
-        "Relatively low violent crime for resort town",
-        "Some property crime typical of tourist areas",
-        "Seasonal population swings affect crime rates",
-        "Strong community watch culture",
-        "Generally safe year-round",
-      ],
-    },
     costOfLiving: "High",
     medianRent: "$1,900",
     medianHome: "$750,000",
@@ -913,64 +275,6 @@ const citiesRaw = [
       socialCommunity: 8,
       outdoorRec: 9,
       safety: 6,
-    },
-    details: {
-      recovery: [
-        "AA meetings available",
-        "Small supportive recovery community",
-        "Behavioral health services",
-        "Outdoor recovery activities",
-        "Community-based support",
-      ],
-      meditation: [
-        "Yoga studios",
-        "Hot springs meditation",
-        "Artist community mindfulness",
-        "Nature-based practices",
-        "Retreat spaces nearby",
-      ],
-      healthWellness: [
-        "Heart of the Rockies Regional Medical Center",
-        "Salida Hot Springs Aquatic Center",
-        "Mount Princeton Hot Springs nearby",
-        "Massage and bodywork",
-        "Integrative health options",
-      ],
-      gyms: [
-        "Salida Hot Springs pool/gym",
-        "Small local gyms",
-        "Outdoor fitness culture",
-        "River-based fitness",
-        "Community rec programs",
-      ],
-      nutrition: [
-        "Simple Foods Market",
-        "Local co-op options",
-        "Farm-to-table restaurants",
-        "Farmer's market (summer)",
-        "Growing health food scene",
-      ],
-      socialCommunity: [
-        "Tight-knit artist community",
-        "River running community",
-        "Mountain biking groups",
-        "FIBArk festival community",
-        "Creative and welcoming atmosphere",
-      ],
-      outdoorRec: [
-        "Arkansas River (rafting, kayaking, SUP)",
-        "Monarch Mountain ski area",
-        "14ers nearby (multiple)",
-        "Mountain biking trails",
-        "Hot springs soaking",
-      ],
-      safety: [
-        "Overall crime ~11 per 1,000 residents",
-        "Violent crime is low (~1-6 per 1,000)",
-        "Property crime above average (~10 per 1,000)",
-        "Safer than ~69% of Colorado cities",
-        "Small-town community vigilance",
-      ],
     },
     costOfLiving: "Moderate",
     medianRent: "$1,400",
@@ -995,64 +299,6 @@ const citiesRaw = [
       outdoorRec: 9,
       safety: 8,
     },
-    details: {
-      recovery: [
-        "Active AA/NA community in Roaring Fork Valley",
-        "Valley recovery network",
-        "Behavioral health services",
-        "Sober outdoor groups",
-        "Supportive small-town community",
-      ],
-      meditation: [
-        "True Nature Healing Arts (renowned center)",
-        "Multiple yoga and meditation studios",
-        "Mindfulness retreats",
-        "Strong contemplative community",
-        "Nature-based meditation practices",
-      ],
-      healthWellness: [
-        "Valley View Hospital (Glenwood Springs)",
-        "Integrative and holistic health practitioners",
-        "Glenwood Hot Springs nearby",
-        "Acupuncture, massage, bodywork",
-        "Functional medicine clinics",
-      ],
-      gyms: [
-        "Carbondale Rec Center",
-        "Yoga studios (multiple)",
-        "CrossFit options",
-        "Rock climbing nearby",
-        "Outdoor fitness culture",
-      ],
-      nutrition: [
-        "Whole Foods culture without the prices",
-        "Excellent farmer's market",
-        "Farm-to-table restaurants",
-        "Health food stores",
-        "Organic local farms",
-      ],
-      socialCommunity: [
-        "Incredibly welcoming community",
-        "Arts and culture events",
-        "Outdoor adventure groups",
-        "Mountain Fair community festival",
-        "Strong volunteer culture",
-      ],
-      outdoorRec: [
-        "Red Hill trails (hiking, biking)",
-        "Aspen skiing 30 min away",
-        "Crystal River fishing",
-        "Marble and Redstone day trips",
-        "World-class road and mountain biking",
-      ],
-      safety: [
-        "Low overall crime (~7 per 1,000 residents)",
-        "Violent crime ~2.6 per 1,000",
-        "Safer than ~63% of Colorado communities",
-        "Small-town community safety culture",
-        "Low risk of violent crime",
-      ],
-    },
     costOfLiving: "High",
     medianRent: "$1,800",
     medianHome: "$700,000",
@@ -1076,64 +322,6 @@ const citiesRaw = [
       outdoorRec: 5,
       safety: 6,
     },
-    details: {
-      recovery: [
-        "Triangle Recovery Club - AA/NA meetings",
-        "Westminster Rescue Mission treatment",
-        "Recovery Center outpatient/IOP programs",
-        "Weber Sober Homes (Joey V House)",
-        "Carroll Hospital behavioral health unit",
-      ],
-      meditation: [
-        "A Mindful Yoga Studio",
-        "Downtown Yoga Westminster",
-        "Branches of Yoga (Sykesville, nearby)",
-        "Harvestin Natural - meditation/relaxation therapy",
-        "Limited but present contemplative community",
-      ],
-      healthWellness: [
-        "Carroll Hospital (LifeBridge Health)",
-        "Behavioral health inpatient and outpatient",
-        "Access Carroll integrated healthcare",
-        "Together We Can mental health services",
-        "Basic integrative health options",
-      ],
-      gyms: [
-        "Westminster Family Fitness Center (city-run)",
-        "YMCA Hill Family Center (has climbing wall)",
-        "Planet Fitness and Anytime Fitness",
-        "The Gym Westminster",
-        "CrossFit Iron Hammer",
-      ],
-      nutrition: [
-        "Harvestin Natural (health market)",
-        "Westminster Farmers Market",
-        "MOM's Organic Market (regional)",
-        "Barefoot Medicine Farm (herbalism)",
-        "Moderate health food options",
-      ],
-      socialCommunity: [
-        "Carroll County parks/rec programming",
-        "Main Street community events",
-        "McDaniel College cultural events",
-        "Volunteer organizations",
-        "Small-town community feel",
-      ],
-      outdoorRec: [
-        "Hashawha Environmental Center (320 acres)",
-        "Morgan Run trails",
-        "Patapsco Valley State Park nearby",
-        "Piney Run Park (water activities)",
-        "No ski access (2+ hours to resorts)",
-      ],
-      safety: [
-        "Crime trending down (violent -44%, property -12% YoY)",
-        "Ranks ~10th among Maryland's safest cities",
-        "Generally safe by resident accounts",
-        "Slightly above national avg for violent crime per capita",
-        "Small-town community safety culture",
-      ],
-    },
     costOfLiving: "Moderate-High",
     medianRent: "$1,500",
     medianHome: "$435,000",
@@ -1148,16 +336,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
     summary: "Fast-growing high-desert city blending outdoor culture with a rising tech/startup scene. Affordable by western standards with Bogus Basin skiing 30 minutes away.",
     scores: {},
-    details: {
-      recovery: ["~75 AA meetings/week in Boise metro", "~15 NA meetings/week", "Idaho Area 18 AA intergroup", "Multiple treatment centers", "Growing recovery community"],
-      meditation: ["~12 yoga studios", "3 dedicated meditation centers", "Buddhist sangha groups", "Growing mindfulness community", "Park-based meditation"],
-      healthWellness: ["Saint Alphonsus & St. Luke's hospital systems", "Level II Trauma Centers", "10-15 integrative practitioners", "Intermountain Hospital (behavioral health)", "Growing mental health services"],
-      gyms: ["55-60 gyms and fitness studios", "Multiple chain and boutique options", "YMCA locations", "Boise city rec centers", "Outdoor fitness culture"],
-      nutrition: ["Boise Co-op (2 locations)", "Whole Foods, Natural Grocers", "Capital City Public Market (year-round)", "Roots Zero Waste Market", "Strong farm-to-table scene"],
-      socialCommunity: ["Treefort Music Fest", "Ridge to Rivers trail community", "BOI Outdoor Club", "Growing arts scene", "Family-friendly neighborhoods"],
-      outdoorRec: ["Bogus Basin ski area (30 min)", "Boise River Greenbelt (25 miles)", "Boise National Forest (2.2M acres)", "Ridge to Rivers trail system", "Lucky Peak reservoir"],
-      safety: ["Low violent crime (2.5 per 1,000)", "Low property crime (12 per 1,000)", "Generally safe metro area", "Family-friendly neighborhoods", "Below national averages"],
-    },
     costOfLiving: "Moderate",
     medianRent: "$1,670",
     medianHome: "$474,000",
@@ -1172,16 +350,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600&h=400&fit=crop",
     summary: "Creative mountain town with deep arts, food, and wellness culture in the Blue Ridge. One of the strongest recovery communities among small US cities.",
     scores: {},
-    details: {
-      recovery: ["~90+ AA meetings/week", "~20 NA meetings/week", "One of the strongest small-city recovery scenes", "Deep wellness-culture tradition", "AshevilleAA.org District 70"],
-      meditation: ["20+ yoga studios", "Asheville Yoga Center (100+ classes/week)", "Shambhala Meditation Center", "6 dedicated meditation centers", "Nationally recognized yoga hub"],
-      healthWellness: ["Mission Hospital (#1 in NC)", "Level II Trauma Center", "25-30 integrative practitioners", "Strong integrative psychiatry", "Long holistic health tradition"],
-      gyms: ["40-45 gyms and studios", "High per-capita gym density (4.5/10k)", "Multiple chain and boutique options", "YMCA, CrossFit, climbing", "Strong fitness culture"],
-      nutrition: ["French Broad Food Co-op", "Whole Foods, Earth Fare, Natural Grocers", "WNC Farmers Market (year-round, 36 acres)", "10 health food stores", "Outstanding farm-to-table dining"],
-      socialCommunity: ["LEAF Festival, arts events year-round", "Drum circles and community gatherings", "Pisgah trail running clubs", "River sports groups", "Vibrant arts community"],
-      outdoorRec: ["Pisgah National Forest (513,000 acres)", "Blue Ridge Parkway access", "Great Smoky Mountains nearby", "Cataloochee skiing (~1 hr)", "World-class trail running"],
-      safety: ["Higher violent crime (8.0 per 1,000)", "Elevated property crime (39 per 1,000)", "Recovering from Hurricane Helene impacts", "Varies significantly by neighborhood", "Downtown area needs awareness"],
-    },
     costOfLiving: "Moderate",
     medianRent: "$1,682",
     medianHome: "$478,000",
@@ -1196,16 +364,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=400&fit=crop",
     summary: "Outdoor-obsessed resort town east of the Cascades with world-class skiing, craft breweries, 225+ trails, and the #4 remote work city in the US.",
     scores: {},
-    details: {
-      recovery: ["~50 AA meetings/week", "~10 NA meetings/week", "Central Oregon Intergroup", "Active but smaller recovery scene", "Outdoor recovery groups"],
-      meditation: ["~10 yoga studios", "3 meditation centers", "Growing mindfulness community", "Nature-based meditation", "Cascade mountain retreats"],
-      healthWellness: ["St. Charles Medical Center (Level II Trauma)", "Regional hospital", "5-8 integrative practitioners", "Behavioral health services growing", "Sports medicine focus"],
-      gyms: ["30-35 gyms and studios", "3.2 gyms per 10k residents", "CrossFit, climbing, boutique studios", "Outdoor fitness culture dominant", "Athletic Club of Bend"],
-      nutrition: ["Natural Grocers, Market of Choice, Whole Foods", "Central Oregon Locavore (year-round)", "6 health food stores", "Bend Farmers Market (year-round Fridays)", "Strong local food movement"],
-      socialCommunity: ["Bend Trail Running community", "COTA mountain bike advocacy", "Central Oregon Nordic Club", "Paddling and river clubs", "Craft brewery social scene"],
-      outdoorRec: ["Mt. Bachelor (3,600+ acres, 21 mi away)", "225+ trails on AllTrails", "Deschutes National Forest (1.8M acres)", "Deschutes River paddling", "Phil's Trail mountain biking"],
-      safety: ["Low violent crime (2.7 per 1,000)", "Moderate property crime (18.8 per 1,000)", "Generally safe community", "Bike theft is common", "Low violent crime risk"],
-    },
     costOfLiving: "High",
     medianRent: "$1,920",
     medianHome: "$679,000",
@@ -1220,16 +378,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1527489377706-5bf97e608852?w=600&h=400&fit=crop",
     summary: "Spiritual wellness mecca among red rock formations. Highest remote work rate (35%), exceptional meditation/yoga scene, and 278 sunshine days. Small but intentional community.",
     scores: {},
-    details: {
-      recovery: ["~15-20 AA meetings/week", "~3-5 NA meetings/week", "Small-town recovery community", "Multiple residential treatment centers", "Acceptance Group, Rule 62 groups"],
-      meditation: ["10-12 yoga studios", "6-8 spiritual/meditation centers", "Vortex-based meditation practices", "Sedona Meditation Center", "Nationally known spiritual destination"],
-      healthWellness: ["No full hospital (Verde Valley Medical 20 min)", "25-30 naturopaths and holistic MDs", "Strong alternative medicine community", "Acupuncture and energy healing", "Wellness retreat destination"],
-      gyms: ["8-10 gyms and studios", "High per-capita (9.2/10k)", "Resort fitness facilities", "Outdoor fitness culture", "Hiking as primary fitness"],
-      nutrition: ["Whole Foods, Natural Grocers", "Interdependence Natural Foods", "Seasonal farmer's market", "3.1 health stores per 10k", "Health-conscious dining"],
-      socialCommunity: ["Active hiking/MTB community", "Spiritual gathering groups", "Arts and gallery events", "Walk Score 60 (somewhat walkable)", "Tight-knit but tourism-heavy"],
-      outdoorRec: ["269 trails on AllTrails", "Red Rock State Park", "Coconino National Forest (487,000 acres)", "Arizona Snowbowl (~50 min)", "World-class hiking and MTB"],
-      safety: ["Low violent crime (3.0 per 1,000)", "Low property crime (13 per 1,000)", "Safe small-town feel", "Tourism-related minor crime", "Well below national averages"],
-    },
     costOfLiving: "High",
     medianRent: "$1,700",
     medianHome: "$932,000",
@@ -1244,16 +392,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=400&fit=crop",
     summary: "Culturally rich state capital with 400+ years of heritage, thriving arts, 300 sunshine days, and exceptional air quality. Strongest integrative health scene outside Boulder.",
     scores: {},
-    details: {
-      recovery: ["112 AA meetings/week (71 groups, 23 locations)", "~15-20 NA meetings/week", "Friendship Club (50+ weekly 12-step meetings)", "Robust recovery ecosystem", "CoDA, Al-Anon, SMART Recovery"],
-      meditation: ["12-15 yoga studios", "Upaya Zen Center", "Body & Brain centers", "5-7 meditation/contemplative centers", "Strong Buddhist community"],
-      healthWellness: ["CHRISTUS St. Vincent Regional Medical Center", "Level III Trauma Center", "40-50 integrative practitioners", "Strong acupuncture/DOM community", "NAMI chapter active"],
-      gyms: ["20-25 gyms and studios", "Railyard Fitness, El Gancho", "Orangetheory, city rec centers", "Salvador Perez community gym", "2.4 gyms per 10k"],
-      nutrition: ["La Montanita Co-op, Sprouts, Whole Foods", "Trader Joe's, Natural Grocers", "Santa Fe Farmers' Market (year-round Saturdays)", "6 health food stores", "Strong local food culture"],
-      socialCommunity: ["Indian Market, Spanish Market", "Santa Fe Opera, Meow Wolf", "Zozobra, Folk Art Market", "Santa Fe Striders running club", "Year-round cultural programming"],
-      outdoorRec: ["Ski Santa Fe (30 min)", "Santa Fe National Forest (1.6M acres)", "122+ trails on AllTrails", "Dale Ball trail system", "Mountain biking and trail running"],
-      safety: ["Higher violent crime (8.3 per 1,000)", "High property crime (51 per 1,000)", "Varies significantly by neighborhood", "Downtown and historic areas safer", "Vehicle theft is a concern"],
-    },
     costOfLiving: "Moderate-High",
     medianRent: "$1,650",
     medianHome: "$635,000",
@@ -1268,16 +406,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&h=400&fit=crop",
     summary: "Waterfront neighborhood popular with young professionals. Walkable rowhomes, O'Donnell Square dining, Canton Waterfront Park, and Johns Hopkins Hospital minutes away.",
     scores: {},
-    details: {
-      recovery: ["~310 AA meetings/week across Baltimore", "~60 NA meetings/week city-wide", "Baltimore Intergroup covers 65+ locations", "Multiple daily meetings accessible", "Strong city-wide recovery network"],
-      meditation: ["The Hall of SELF (breathwork, sound healing)", "YogaWorks and Sanctuary Bodyworks nearby", "Baltimore Yoga Village meditation", "The Sedona House", "Growing wellness community"],
-      healthWellness: ["Johns Hopkins Hospital 1.5 miles away (#1 nationally)", "Mercy Medical Center 2 miles", "Strong mental health via JHU Psychiatry", "Sheppard Pratt outpatient offices", "8-12 integrative practitioners nearby"],
-      gyms: ["Merritt Clubs Canton", "MAC Harbor East", "CrossFit Canton, F45", "Orange Theory nearby", "10-12 gyms/studios total"],
-      nutrition: ["MOM's Organic Market (Hampden)", "Whole Foods Harbor East", "Sprouts Farmers Market", "Canton Waterfront Farmers Market (seasonal)", "OK Natural Foods"],
-      socialCommunity: ["Walk Score 89", "Canton Community Association active", "O'Donnell Square events and festivals", "Canton Waterfront Park", "Canton Kayak Club"],
-      outdoorRec: ["Canton Waterfront Park and Promenade", "Patapsco Valley State Park (16,000 acres)", "Gunpowder Falls State Park (15,000 acres)", "Roundtop/Liberty skiing (~1.25 hr)", "Inner Harbor waterfront trail"],
-      safety: ["Violent crime 7.3 per 1,000", "Property crime 23.1 per 1,000", "Safer than many Baltimore neighborhoods", "Active community watch", "22nd safety percentile nationally"],
-    },
     costOfLiving: "Moderate",
     medianRent: "$1,900",
     medianHome: "$371,000",
@@ -1292,16 +420,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&h=400&fit=crop",
     summary: "Historic waterfront district with cobblestone streets, vibrant nightlife, year-round farmer's market, Walk Score 96, and Johns Hopkins essentially next door.",
     scores: {},
-    details: {
-      recovery: ["~310 AA meetings/week across Baltimore", "~60 NA meetings/week city-wide", "Baltimore Intergroup covers 65+ locations", "Multiple daily meetings accessible", "Adjacent to strong recovery network"],
-      meditation: ["YogaWorks Fells Point", "Sanctuary Bodyworks", "Pilates House Fells Point", "Red Lila Yoga (Harbor East)", "Growing mindfulness offerings"],
-      healthWellness: ["Johns Hopkins Hospital < 1 mile", "Mercy Medical Center 1.5 miles", "Top-tier mental health access", "Sheppard Pratt and Kennedy Krieger", "Holistic health along Broadway"],
-      gyms: ["XPF Studio Fells Point", "F45 Fells Point", "Pilates House", "MAC Harbor East nearby", "8-10 gyms/studios total"],
-      nutrition: ["Fells Point Farmers' Market (year-round Saturdays)", "Whole Foods Harbor East", "MOM's Organic Market (Hampden)", "Sprouts Farmers Market", "Specialty food shops on Broadway"],
-      socialCommunity: ["Walk Score 96 (3rd most walkable in Baltimore)", "Fells Point Fun Festival", "First Fridays and Privateer Day", "Live music and street events", "Active business association"],
-      outdoorRec: ["Waterfront Promenade", "Kayak and paddleboard rentals", "Patapsco Valley State Park (30 min)", "Gunpowder Falls State Park (45 min)", "Inner Harbor waterfront loop"],
-      safety: ["Violent crime 6.3 per 1,000", "Property crime 22.2 per 1,000", "Nightlife area - street awareness needed", "25th safety percentile nationally", "Historic cobblestone streets well-lit"],
-    },
     costOfLiving: "Moderate",
     medianRent: "$2,195",
     medianHome: "$310,000",
@@ -1316,16 +434,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop",
     summary: "Cosmopolitan hub with Walk Score 98, FRESHFARM year-round market, Dupont Circle Club recovery hub, 57% remote work rate, and the highest density of therapists in the region.",
     scores: {},
-    details: {
-      recovery: ["2,000+ AA meetings/week in DC metro", "~70 NA meetings/week", "Dupont Circle Club - major recovery hub with daily meetings", "Washington Area Intergroup Association", "Strongest metro recovery network on this list"],
-      meditation: ["Yoga District Dupont, CorePower Yoga", "Kadampa Meditation Center at Dupont", "Shambhala Meditation Center", "Insight Meditation Community of Washington", "6-8 yoga studios in area"],
-      healthWellness: ["GW University Hospital < 1 mile", "MedStar Georgetown ~2 miles", "Extremely high therapist density in Dupont/Logan", "15-25 integrative practitioners", "Howard University Hospital 1.5 miles"],
-      gyms: ["Gold's Gym, Barry's Dupont", "MINT Adams Morgan", "Orange Theory, Solidcore", "CrossFit, Capital Rowing", "20-25 gyms and studios"],
-      nutrition: ["Whole Foods P Street", "Trader Joe's, Streets Market", "FRESHFARM Dupont Circle Market (year-round Sundays)", "50+ vendors in season", "Yes! Organic Market nearby"],
-      socialCommunity: ["Walk Score 98", "Embassy Row open houses", "Adams Morgan Day festival", "LGBTQ+ historic anchor neighborhood", "17th Street festivals"],
-      outdoorRec: ["Rock Creek Park (2,000+ acres) adjacent", "C&O Canal towpath accessible", "Dumbarton Oaks Park", "Liberty/Whitetail skiing (~1.25 hr)", "72 trails on AllTrails (DC area)"],
-      safety: ["Violent crime 7.9 per 1,000", "Property crime 38 per 1,000", "Typical urban awareness needed", "Well-lit commercial corridors", "Embassy presence adds security"],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,500",
     medianHome: "$520,000",
@@ -1340,16 +448,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop",
     summary: "Historic affluent village with cobblestone streets, C&O Canal towpath, Potomac waterfront, Georgetown University energy, and the best outdoor trail access in DC.",
     scores: {},
-    details: {
-      recovery: ["2,000+ AA meetings/week in DC metro", "~70 NA meetings/week", "DC-wide meeting network accessible", "Washington Area Intergroup Association", "Multiple nearby meeting locations"],
-      meditation: ["Down Dog Yoga Georgetown", "CorePower Yoga Georgetown", "Club Pilates Georgetown", "Shambhala Meditation Center accessible", "Circle Yoga cooperative"],
-      healthWellness: ["MedStar Georgetown University Hospital (in-neighborhood)", "US News ranked hospital", "Sibley Memorial ~2 miles", "10-15 integrative practitioners", "Naturopathic and holistic offices"],
-      gyms: ["CorePower, Club Pilates", "Georgetown Fitness, Equinox nearby", "SoulCycle, boutique studios", "14 gyms per 10k residents", "M Street/Wisconsin Ave corridor"],
-      nutrition: ["Whole Foods (Glover Park + Foggy Bottom)", "Trader Joe's nearby", "Dean & DeLuca specialty", "Georgetown FRESHFARM Market (seasonal)", "Upscale health-conscious dining"],
-      socialCommunity: ["Walk Score 85", "Georgetown French Market", "Waterfront festivals and garden tours", "University programming and events", "Taste of Georgetown"],
-      outdoorRec: ["C&O Canal towpath (184-mile trail)", "Capital Crescent Trail", "Georgetown Waterfront Park", "Potomac kayaking and rowing", "Rock Creek Park nearby"],
-      safety: ["Low violent crime (5.6 per 1,000)", "High property crime (55.5 per 1,000 - retail theft driven)", "75% of crime in commercial areas", "Residential streets very safe", "University police presence"],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,650",
     medianHome: "$1,700,000",
@@ -1364,16 +462,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop",
     summary: "DC's most affordable diverse neighborhoods with Walk Score 96, year-round farmer's market, Ethiopian/Latin food scene, Rock Creek Park access, and rowhouse charm.",
     scores: {},
-    details: {
-      recovery: ["2,000+ AA meetings/week in DC metro", "~70 NA meetings/week", "DC-wide meeting network accessible", "Washington Area Intergroup Association", "Community mental health centers"],
-      meditation: ["Studios along 14th Street corridor", "CorePower on U Street accessible", "Circle Yoga cooperative", "Yoga District via Metro", "Growing mindfulness community"],
-      healthWellness: ["Howard University Hospital ~1 mile", "MedStar Washington Hospital Center 1.5 miles", "Growing integrative health on 14th St", "Community mental health centers", "8-12 integrative practitioners"],
-      gyms: ["Washington Sports Club (pool)", "Planet Fitness", "Boutique studios along 14th St", "CrossFit and boxing gyms", "10-15 gyms total"],
-      nutrition: ["Yes! Organic Market", "Streets Market, Target grocery", "Columbia Heights FRESHFARM (year-round Saturdays)", "Whole Foods at Walter Reed nearby", "Diverse ethnic grocery options"],
-      socialCommunity: ["Walk Score 96", "Columbia Heights Day festival", "Ethiopian and Latin food scene", "Diverse and rapidly growing", "Metropolitan Branch Trail bike community"],
-      outdoorRec: ["Rock Creek Park borders Petworth directly", "Fort Totten Park", "Soldiers' Home grounds (272 acres)", "Meridian Hill / Malcolm X Park", "Liberty/Whitetail skiing (~1.25 hr)"],
-      safety: ["Violent crime 7.3 per 1,000", "Property crime 29.3 per 1,000", "Petworth ~14% below DC average", "Improving with development", "Varies by block - some areas gentrifying"],
-    },
     costOfLiving: "High",
     medianRent: "$1,950",
     medianHome: "$670,000",
@@ -1388,15 +476,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
     summary: "Upscale tree-lined historic district with Bayshore Blvd running path, Hyde Park Village boutique shopping, and dense SoHo restaurant/nightlife strip. Perfect for affluent career-focused singles who want walkable luxury.",
     scores: {},
-    details: {
-      recovery: ["~150+ weekly AA meetings in Tampa area", "~50 weekly NA meetings", "Tampa Funcoast Area NA", "Multiple recovery centers nearby", "Strong 12-step community"],
-      meditation: ["Bella Prana Collective (nearby)", "Gaze Hot Yoga", "Body Aligned, Jai Dee Yoga", "6 yoga studios in area", "Growing mindfulness scene"],
-      healthWellness: ["Tampa General Hospital (Davis Islands, adjacent)", "USF Health", "High integrative practitioner density (15+)", "Strong mental health provider network", "Multiple urgent cares"],
-      gyms: ["Barry's Bootcamp Hyde Park", "CrossFit Hyde Park", "Bayshore Fit", "Orangetheory, F45", "17 gyms per 10k residents"],
-      nutrition: ["Fresh Market Hyde Park Village", "Whole Foods at Dale Mabry", "Hyde Park Village Fresh Market (year-round 1st Sunday)", "Organic options at local cafes", "Farm-to-table dining"],
-      outdoorRec: ["Bayshore Boulevard (4.5 mi running path)", "Hillsborough River State Park (30 min)", "Tampa Riverwalk access", "Kayaking on Hillsborough River", "Palma Ceia Golf Club"],
-      safety: ["Violent crime 3.2 per 1,000 (below Tampa avg)", "Property crime ~24 per 1,000", "Safer than most Tampa neighborhoods", "Well-lit active streets", "Active neighborhood watch"],
-    },
     costOfLiving: "High",
     medianRent: "$2,272",
     medianHome: "$625,000",
@@ -1411,15 +490,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=400&fit=crop",
     summary: "Sleek modern high-rise waterfront living with Water Street's wellness-focused developments (Life Time Athletic, cold-plunge spas), Riverwalk access, and Amalie Arena right there. Tampa's most built-for-wellness neighborhood.",
     scores: {},
-    details: {
-      recovery: ["~150+ weekly AA meetings in Tampa area", "~50 weekly NA meetings", "Downtown meetings accessible by walking", "Multiple recovery centers nearby", "Strong 12-step community"],
-      meditation: ["Yoga at Water Street (free park sessions)", "Bella Prana Collective", "Life Time yoga", "5 studios in immediate area", "Waterfront meditation spaces"],
-      healthWellness: ["Tampa General Hospital (across bridge)", "Water Street Wellness District", "High integrative practitioner density", "Strong mental health provider network", "On-site medical concierge services"],
-      gyms: ["Life Time Water Street (massive facility)", "Crunch Channelside", "Sukha Club, Barry's Bootcamp", "31 gyms per 10k (extremely high)", "Cold-plunge and cryotherapy studios"],
-      nutrition: ["Publix GreenWise Water Street", "Sprouts Tampa Heights (nearby)", "Water Street Market (year-round)", "Health-focused dining at Tampa EDITION", "Juice bars and smoothie shops"],
-      outdoorRec: ["Tampa Riverwalk (direct access)", "Cotanchobee Fort Brooke Park", "Hillsborough River kayaking", "Amalie Arena walkable", "Channel District waterfront"],
-      safety: ["Violent crime 3.8 per 1,000", "Property crime ~31 per 1,000 (urban density)", "Typical downtown urban awareness", "High foot traffic, well-lit", "Building security common"],
-    },
     costOfLiving: "High",
     medianRent: "$2,348",
     medianHome: "$625,000",
@@ -1434,15 +504,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=400&fit=crop",
     summary: "Urban high-rise living with direct Riverwalk access, walk-to-work convenience for career-focused singles, and Tampa Downtown Partnership's free weekly fitness programming at Curtis Hixon Park.",
     scores: {},
-    details: {
-      recovery: ["~150+ weekly AA meetings in Tampa area", "~50 weekly NA meetings", "Multiple downtown meetings", "Walkable to recovery hubs", "Strong 12-step community"],
-      meditation: ["Sukha Club downtown", "Life Time yoga", "Free Yoga Downtown Tampa (weekly park sessions)", "Bella Prana Collective", "Curtis Hixon Park mindfulness"],
-      healthWellness: ["Tampa General Hospital (<1 mile)", "USF Health downtown clinic", "Medium-high integrative practitioner count", "Strong mental health services", "Walk-to medical appointments"],
-      gyms: ["Life Time Water Street", "Downtown YMCA - South Franklin", "Barry's, Elite Strength & Conditioning", "34 gyms per 10k (highest density)", "Curtis Hixon free weekly fitness"],
-      nutrition: ["Publix GreenWise Water Street", "Sprouts Tampa Heights", "Water Street Market (year-round)", "Downtown farmers market", "Lunch spots with healthy options"],
-      outdoorRec: ["Tampa Riverwalk (direct access)", "Curtis Hixon Waterfront Park", "Hillsborough River kayaking", "Amalie Arena steps away", "Convention Center waterfront"],
-      safety: ["Violent crime ~5.0 per 1,000", "Property crime ~35 per 1,000 (urban)", "Day/night density skews rates", "Transit hub awareness needed", "Active business district security"],
-    },
     costOfLiving: "High",
     medianRent: "$2,178",
     medianHome: "$550,000",
@@ -1457,15 +518,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&h=400&fit=crop",
     summary: "Eclectic historic bungalow district with indie breweries, craft coffee, bike culture, and Run The Heights running club. Ideal for authentic young professionals who want community over luxury at a lower price.",
     scores: {},
-    details: {
-      recovery: ["~150+ weekly AA meetings in Tampa area", "~50 weekly NA meetings", "Sober-friendly craft coffee scene", "Community-driven recovery support", "Tight-knit neighborhood feel"],
-      meditation: ["Lucky Cat Yoga", "Jai Dee Yoga & Wellness", "Take Me To The River Yoga", "4+ studios with indie vibe", "Yoga in Hillsborough River parks"],
-      healthWellness: ["Tampa General ~10 min", "Urgent care nearby", "Growing integrative health scene", "Affordable mental health options", "Community clinics"],
-      gyms: ["Seminole Heights CrossFit", "SH Athletic Center", "Indie boutique studios", "Bike-commuter friendly", "Run The Heights running club"],
-      nutrition: ["Sprouts Farmers Market (Tampa Heights, adjacent)", "Seminole Heights Sunday Market (year-round, 70+ vendors)", "Farm-to-table restaurants", "Craft coffee scene", "Local bakeries and artisan shops"],
-      outdoorRec: ["Hillsborough River State Park (closest of Tampa picks)", "Hillsborough River kayaking", "Bike lanes throughout", "Rivercrest Park", "Best bike score in Tampa (78)"],
-      safety: ["Violent crime ~6.0 per 1,000", "Property crime ~20 per 1,000", "Varies by sub-area", "Gentrifying with active community", "Below Tampa property crime average"],
-    },
     costOfLiving: "Moderate",
     medianRent: "$1,620",
     medianHome: "$400,000",
@@ -1480,15 +532,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop",
     summary: "Outdoor paradise with Barton Creek Greenbelt, Zilker Park (ACL Festival), Barton Springs, and 10-mile Butler Hike-and-Bike Trail. Peak pick for fit young pros who treat the Greenbelt as their gym.",
     scores: {},
-    details: {
-      recovery: ["150 AA meetings/week in Austin metro", "80 NA meetings/week", "Hill Country Intergroup", "Austin Galano Club", "Multiple daily meetings accessible"],
-      meditation: ["Sukha Yoga, Flow Yoga Zilker", "Wanderlust Yoga", "Black Swan Yoga", "Motiv Fitness", "10+ yoga studios within 1 mile"],
-      healthWellness: ["St. David's South Austin Medical", "Seton Medical Center", "15+ integrative practitioners", "Strong mental health provider network", "Dell Medical nearby"],
-      gyms: ["Castle Hill Fitness", "Orangetheory, CorePower, F45", "Barton Springs Gym", "Motiv boutique fitness", "22 gyms per 10k (exceptional density)"],
-      nutrition: ["Whole Foods Lamar (flagship)", "Central Market", "Wheatsville Co-op", "Barton Creek Farmers Market (year-round Saturdays)", "Sustainable Food Center"],
-      outdoorRec: ["Zilker Park (350 acres)", "Barton Creek Greenbelt (809 acres, 12.68 miles)", "Barton Springs Pool", "Lady Bird Lake Butler Trail (10 miles)", "200+ AllTrails trails in Austin area"],
-      safety: ["Violent crime 2.8 per 1,000 (below Austin avg)", "Property crime 24 per 1,000", "Generally safe outdoor-focused area", "Well-populated trails and parks", "Lower crime than urban core"],
-    },
     costOfLiving: "Very High",
     medianRent: "$1,972",
     medianHome: "$975,000",
@@ -1503,15 +546,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=400&fit=crop",
     summary: "Austin's creative energy capital. Walkable hipster hub with the best food/nightlife scene, loaded with fitness studios and craft coffee. Highest remote work rate in the city.",
     scores: {},
-    details: {
-      recovery: ["150 AA meetings/week in Austin metro", "80 NA meetings/week", "East side recovery community", "Multiple meetings accessible", "Sober-friendly craft coffee scene"],
-      meditation: ["Practice Yoga, East Side Yoga", "Black Swan Yoga East", "CorePower Yoga", "Wild Heart Meditation", "12 yoga studios nearby"],
-      healthWellness: ["Dell Seton Medical Center (nearby)", "UT Health Austin", "20+ integrative practitioners", "Strong mental health network", "Dell Medical School proximity"],
-      gyms: ["F45, Barry's Bootcamp", "Big Tex Gym", "Iron Forged", "Easy Tiger Bouldering / Mesa Rim climbing", "30 gyms and studios"],
-      nutrition: ["Whole Foods East", "Wheatsville Co-op", "Thom's Market", "HOPE Farmers Market (year-round Sundays)", "Growing local food scene"],
-      outdoorRec: ["Boggy Creek Greenbelt", "Festival Beach", "Lady Bird Lake access", "Roy G. Guerrero Park (363 acres)", "East side Butler Trail connection"],
-      safety: ["Violent crime 4.5 per 1,000 (urban core)", "Property crime 30 per 1,000", "Gentrifying - varies by block", "Active foot traffic", "Well-lit commercial corridors"],
-    },
     costOfLiving: "High",
     medianRent: "$1,800",
     medianHome: "$645,000",
@@ -1526,15 +560,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&h=400&fit=crop",
     summary: "Iconic Austin main street with 82 Walk Score, direct Lady Bird Lake and Town Lake Trail access, boutique fitness hub, and the highest density of young singles in the city (median age 34).",
     scores: {},
-    details: {
-      recovery: ["150 AA meetings/week in Austin metro", "80 NA meetings/week", "Hill Country Intergroup", "Sober-friendly coffee and dining", "Multiple daily meetings accessible"],
-      meditation: ["Sukha Yoga South Lamar", "Yoga Yoga, Black Swan South", "Wanderlust Yoga", "Meditation centers along South Lamar", "9 studios in area"],
-      healthWellness: ["St. David's South, Seton Main", "Strong integrative health scene", "15+ integrative practitioners", "Strong mental health network", "Dell Children's nearby"],
-      gyms: ["CorePower Yoga, Orangetheory", "F45, Barry's Bootcamp", "Pure Barre, Solidcore", "Castle Hill Fitness", "22 gyms/studios in area"],
-      nutrition: ["Wheatsville Co-op South Lamar", "HEB Hancock", "Whole Foods Lamar (nearby)", "SFC Farmers Market (year-round)", "Health-conscious dining"],
-      outdoorRec: ["Lady Bird Lake / Town Lake Trail (10 miles)", "Butler Park, Little Stacy Park", "Blunn Creek Greenbelt", "Rogue Running HQ on South Lamar", "Auditorium Shores"],
-      safety: ["Violent crime 3.2 per 1,000", "Property crime 28 per 1,000", "Active walkable main street", "Higher foot traffic than quiet areas", "Gentrified residential blocks"],
-    },
     costOfLiving: "Very High",
     medianRent: "$1,950",
     medianHome: "$840,800",
@@ -1549,15 +574,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=400&fit=crop",
     summary: "Master-planned walkable community with 140 acres of parks, 12 miles of trails, H-E-B and Orangetheory on-site, and one of Austin's biggest farmers markets. Built for active lifestyles.",
     scores: {},
-    details: {
-      recovery: ["150 AA meetings/week in Austin metro", "80 NA meetings/week", "Downtown meetings accessible", "Hill Country Intergroup", "Recovery community accessible"],
-      meditation: ["CorePower Yoga Mueller", "Austin Yoga Lounge", "Yoga East Austin", "6 studios nearby", "Community wellness programming"],
-      healthWellness: ["Dell Children's Medical Center (on-site)", "Dell Seton Medical 5 min", "12+ integrative practitioners", "Strong mental health network", "Top-tier pediatric and adult care"],
-      gyms: ["Orangetheory Mueller", "CorePower Yoga", "Pure Austin Fitness", "Mueller Aquatic Center", "23 gyms per 10k (highest density)"],
-      nutrition: ["H-E-B flagship (on-site)", "Trader Joe's nearby", "Natural Grocers accessible", "Texas Farmers Market at Mueller (120 vendors, year-round)", "One of Austin's biggest markets"],
-      outdoorRec: ["140 acres of parks inside Mueller", "12 miles of trails on-site", "Mueller Lake Park", "Southwest Greenway", "John Gaines Park, Boggy Creek Greenbelt"],
-      safety: ["Violent crime 2.0 per 1,000 (lowest of Austin picks)", "Property crime 18 per 1,000", "Master-planned with designed safety", "Well-lit trails and streets", "Active community watch"],
-    },
     costOfLiving: "High",
     medianRent: "$2,100",
     medianHome: "$900,000",
@@ -1572,15 +588,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&h=400&fit=crop",
     summary: "Historic-meets-modern waterfront city with walkable Old Town charm, Mount Vernon Trail running, Metro access to DC, and a strong 30-something professional scene.",
     scores: {},
-    details: {
-      recovery: ["2,000+ DC metro AA meetings weekly", "70 NA meetings/week", "Washington Area Intergroup", "Multiple treatment centers nearby", "Strong recovery community"],
-      meditation: ["PIES, Radiance Yoga", "532Yoga, Sun & Moon Yoga", "CorePower Yoga", "Mind the Mat", "15 yoga studios"],
-      healthWellness: ["Inova Alexandria Hospital", "Access to DC-metro systems", "35 integrative practitioners", "Strong mental health network", "NIH proximity"],
-      gyms: ["Onelife Fitness, Orangetheory", "Barry's, F45, Mayweather", "CrossFit Old Town", "55+ gyms and studios", "Boutique fitness variety"],
-      nutrition: ["Whole Foods (2 locations)", "Trader Joe's (2 locations)", "MOM's Organic, Sprouts", "Old Town Farmers Market (year-round Saturdays)", "Del Ray and Old Town North markets"],
-      outdoorRec: ["Mount Vernon Trail (18 miles)", "GW Memorial Parkway access", "Potomac River access", "Four Mile Run trail", "Liberty/Whitetail/Roundtop skiing (~2 hours)"],
-      safety: ["Low violent crime 2.2 per 1,000", "Property crime 26 per 1,000", "Among safest DC-metro jurisdictions", "Historic Old Town is very safe", "Active community policing"],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,500",
     medianHome: "$590,000",
@@ -1595,15 +602,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop",
     summary: "Dense urban career-driven playground for young professionals. Metro-connected, highest-income county in the US, non-stop rooftop/fitness culture with 80+ gyms and 25 intramural leagues.",
     scores: {},
-    details: {
-      recovery: ["2,000+ DC metro AA meetings weekly", "70 NA meetings/week", "Washington Area Intergroup", "Strong Arlington recovery community", "Multiple daily meetings"],
-      meditation: ["CorePower Yoga, Mind the Mat", "Sun & Moon Yoga", "Down Dog Yoga", "Meditation Museum nearby", "20 yoga studios"],
-      healthWellness: ["Virginia Hospital Center", "VHC Health", "45 integrative practitioners", "NIH access", "Top-tier mental health network"],
-      gyms: ["Equinox, Onelife Fitness", "Orangetheory, Solidcore, Barry's", "F45, CrossFit studios", "80+ gyms and studios", "Rooftop fitness culture"],
-      nutrition: ["Whole Foods (3 locations)", "Trader Joe's (2 locations)", "MOM's Organic, Mosaic", "Arlington Farmers Market at Courthouse (year-round)", "Health-conscious dining"],
-      outdoorRec: ["Mount Vernon Trail", "Potomac Heritage Trail", "Custis Trail, W&OD Trail", "Arlington National Cemetery grounds", "GW Parkway access"],
-      safety: ["Violent crime 3.0 per 1,000", "Low property crime 17 per 1,000", "Among safest urban counties in US", "Well-policed Metro corridors", "Generally very safe"],
-    },
     costOfLiving: "Very High",
     medianRent: "$2,790",
     medianHome: "$698,000",
@@ -1618,15 +616,6 @@ const citiesRaw = [
     image: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600&h=400&fit=crop",
     summary: "Historic downtown with craft breweries, trailheads at your doorstep, and growing young-professional scene. MARC rail to DC, Catoctin Mountain access, and 4 ski resorts within 2 hours.",
     scores: {},
-    details: {
-      recovery: ["60+ AA meetings weekly", "20+ NA meetings weekly", "Frederick Area AA", "Close to DC and Baltimore networks", "Growing recovery community"],
-      meditation: ["Yoga Center of Frederick", "Dancing Bear Yoga", "Charm City Yoga", "8 yoga studios", "Meditation groups at Weinberg Center"],
-      healthWellness: ["Frederick Health Hospital", "Johns Hopkins proximity (1 hour)", "20 integrative practitioners", "Mental health services", "Growing healthcare hub"],
-      gyms: ["Orangetheory Frederick", "CrossFit Frederick, Planet Fitness", "Gold's Gym, F45, Pure Barre", "35 gyms and studios", "4 gyms per 10k residents"],
-      nutrition: ["Whole Foods, MOM's Organic", "Common Market Co-op", "Trader Joe's nearby", "Everedy Square market (year-round)", "West Frederick Farmers Market"],
-      outdoorRec: ["Catoctin Mountain Park (5,770 acres)", "Cunningham Falls State Park (6,000+ acres)", "Gambrill State Park", "Sugarloaf Mountain", "Liberty/Whitetail/Roundtop/Wisp skiing"],
-      safety: ["Violent crime 4.0 per 1,000", "Low property crime 17 per 1,000", "Small-city community safety", "Historic downtown is very safe", "Lower crime than DC urban core"],
-    },
     costOfLiving: "Moderate-High",
     medianRent: "$1,928",
     medianHome: "$435,000",
@@ -1652,131 +641,290 @@ export const categories = [
   { key: "dating", label: "Dating Scene", icon: "💘", color: "#E91E63" },
 ];
 
-// Auto-generate detail descriptions for new metric categories from raw data
-function generateNewDetails(cityId) {
+// ============================================================
+// DYNAMIC DETAIL GENERATION
+// ============================================================
+// Every city's `details` object is fully generated from its raw metrics.
+// This keeps cities.js small (just id, name, region, pop, image, summary, vibe,
+// cost fields) and lets us strip out ~1,500 lines of hardcoded strings.
+// Update the functions below to change any detail text for every city at once.
+
+const fmt = (n) => n.toLocaleString();
+
+function detailsRecovery(m) {
+  return [
+    `~${fmt(m.weeklyAA)} weekly AA meetings within 15 miles`,
+    `~${fmt(m.weeklyNA)} weekly NA meetings within 15 miles`,
+    m.weeklyAA >= 500 ? "Huge recovery network - meetings at nearly every hour" :
+      m.weeklyAA >= 150 ? "Strong recovery network with daily meeting options" :
+      m.weeklyAA >= 50 ? "Active recovery community with solid meeting coverage" :
+      m.weeklyAA >= 20 ? "Smaller but accessible recovery community" :
+      "Limited local meetings - you may need to travel",
+    m.weeklyNA >= 30 ? "Deep NA presence in addition to AA" :
+      m.weeklyNA >= 10 ? "Reasonable NA access alongside AA" :
+      "NA is thin - AA is the primary option",
+  ];
+}
+
+function detailsMeditation(m) {
+  return [
+    `${m.yogaStudios} yoga studios in the area`,
+    `${m.meditationCenters} dedicated meditation centers`,
+    m.yogaStudios >= 40 ? "Yoga is a core part of the local culture" :
+      m.yogaStudios >= 15 ? "Strong yoga and mindfulness scene" :
+      m.yogaStudios >= 6 ? "Reasonable yoga options" :
+      "Limited dedicated yoga offerings",
+    m.meditationCenters >= 5 ? "Multiple contemplative traditions represented" :
+      m.meditationCenters >= 2 ? "Established meditation community" :
+      "Meditation mostly happens inside yoga studios",
+  ];
+}
+
+function detailsHealthWellness(m) {
+  const hospitalLabel =
+    m.hospitalScore >= 3 ? "Major hospital systems (trauma center, specialty care)" :
+    m.hospitalScore >= 2 ? "Regional hospital with full services" :
+    "Limited hospital access - nearest major hospital is a drive";
+  const mentalLabel =
+    m.mentalHealthScore >= 3 ? "Extensive mental health services and therapist density" :
+    m.mentalHealthScore >= 2 ? "Adequate mental health services" :
+    "Limited mental health provider options";
+  return [
+    hospitalLabel,
+    `~${m.integrativePractitioners} integrative/holistic health practitioners`,
+    mentalLabel,
+    m.integrativePractitioners >= 40 ? "Nationally notable integrative health scene" :
+      m.integrativePractitioners >= 20 ? "Strong alternative/integrative options" :
+      m.integrativePractitioners >= 10 ? "Moderate integrative health presence" :
+      "Integrative health is thin - mostly conventional medicine",
+  ];
+}
+
+function detailsGyms(m) {
+  return [
+    `${m.gymsTotal} gyms, fitness studios, and rec centers in metro`,
+    `${m.gymsPer10k.toFixed(1)} gyms per 10,000 residents`,
+    m.gymsPer10k >= 3 ? "Excellent per-capita fitness density" :
+      m.gymsPer10k >= 2 ? "Solid variety of fitness options" :
+      m.gymsPer10k >= 1.5 ? "Adequate fitness options" :
+      "Fitness options are more limited than average",
+    m.gymsTotal >= 80 ? "Full spectrum: big-box chains, boutique studios, climbing, CrossFit" :
+      m.gymsTotal >= 30 ? "Good mix of chains and boutique studios" :
+      m.gymsTotal >= 10 ? "Basic chains plus some boutique options" :
+      "Limited to a few basic gyms",
+  ];
+}
+
+function detailsNutrition(m) {
+  const marketLabel =
+    m.yearRoundMarket ? "Year-round farmer's market" :
+    m.seasonalMarket ? "Seasonal farmer's market (typically May-October)" :
+    "No regular farmer's market";
+  return [
+    `${m.healthStores} natural/organic grocery stores`,
+    `${m.healthStoresPer10k.toFixed(2)} health stores per 10k residents`,
+    marketLabel,
+    m.healthStores >= 10 ? "Strong health food scene - Whole Foods, co-ops, specialty shops" :
+      m.healthStores >= 5 ? "Good health food variety" :
+      m.healthStores >= 2 ? "Basic natural grocery options" :
+      "Limited - mostly conventional grocery",
+  ];
+}
+
+function detailsSocialCommunity(m) {
+  return [
+    `~${m.intramuralLeagues || 0} intramural sports leagues (kickball, volleyball, soccer, etc.)`,
+    `~${m.runningClubs || 0} running clubs and groups`,
+    m.outdoorGroupsScore === 3 ? "Abundant outdoor and wellness groups" :
+      m.outdoorGroupsScore === 2 ? "Moderate outdoor and wellness groups" :
+      "Limited outdoor and wellness groups",
+    (m.intramuralLeagues || 0) >= 15 ? "Excellent for meeting active young professionals" :
+      (m.intramuralLeagues || 0) >= 8 ? "Great intramural and social sports options" :
+      (m.intramuralLeagues || 0) >= 3 ? "Decent local league options" :
+      "Small but active community - fewer organized leagues",
+  ];
+}
+
+function detailsWalkability(m) {
+  const ws = m.walkScore;
+  const classification =
+    ws >= 90 ? "Walker's Paradise - walk to almost everything" :
+    ws >= 70 ? "Very Walkable - most errands on foot" :
+    ws >= 50 ? "Somewhat Walkable - some errands on foot" :
+    ws >= 25 ? "Car-Dependent - most errands require a car" :
+    "Very Car-Dependent - almost all errands require a car";
+  return [
+    `Walk Score: ${ws}/100`,
+    classification,
+    ws >= 70 ? "No car needed for daily life" :
+      ws >= 50 ? "Car helpful but not essential" :
+      "Car essential",
+    "Source: WalkScore.com",
+  ];
+}
+
+function detailsOutdoorRec(m) {
+  return [
+    `~${m.trailCount} AllTrails trails in the area`,
+    `${m.skiResortsWithin1hr} ski resort${m.skiResortsWithin1hr === 1 ? "" : "s"} within 1 hour`,
+    `~${fmt(m.publicLandAcres)} acres of nearby public land`,
+    m.publicLandAcres >= 1000000 ? "Massive public land access - millions of acres nearby" :
+      m.publicLandAcres >= 100000 ? "Excellent public land access" :
+      m.publicLandAcres >= 10000 ? "Solid access to parks and open space" :
+      "Limited nearby public land - mostly urban parks",
+    m.trailCount >= 200 ? "Trail hub - hundreds of options for every skill level" :
+      m.trailCount >= 100 ? "Strong trail network" :
+      m.trailCount >= 50 ? "Good trail selection" :
+      "Basic trail access - limited nearby options",
+  ];
+}
+
+function detailsSafety(m) {
+  return [
+    `Violent crime: ${m.violentPer1k} per 1,000 residents`,
+    `Property crime: ${m.propertyPer1k} per 1,000 residents`,
+    m.violentPer1k <= 2 ? "Very low violent crime - among the safest options" :
+      m.violentPer1k <= 4 ? "Low violent crime" :
+      m.violentPer1k <= 7 ? "Moderate violent crime - typical urban levels" :
+      m.violentPer1k <= 12 ? "Elevated violent crime - neighborhood matters" :
+      "High violent crime - significant awareness needed",
+    m.propertyPer1k <= 15 ? "Very low property crime" :
+      m.propertyPer1k <= 30 ? "Moderate property crime - standard urban awareness" :
+      m.propertyPer1k <= 60 ? "Elevated property crime - lock your car" :
+      "High property crime - car break-ins and bike theft common",
+  ];
+}
+
+function detailsClimate(m) {
+  return [
+    `${m.sunshineDays} days of sunshine per year`,
+    `Summer highs average ${m.avgHighSummer}°F (July)`,
+    `Winter lows average ${m.avgLowWinter}°F (January)`,
+    `${m.annualSnowfall}" annual snowfall`,
+    m.annualSnowfall > 100 ? "Heavy snow - great for skiing, cold winters" :
+      m.annualSnowfall > 50 ? "Moderate snow with four-season climate" :
+      m.annualSnowfall > 10 ? "Light snow most winters" :
+      "Virtually no snow - mild winters",
+  ];
+}
+
+function detailsAffordability(m) {
+  return [
+    `Cost-of-living index: ${m.costIndex} (national average = 100)`,
+    `Median rent: $${fmt(m.medianRentNumeric)}/month`,
+    m.costIndex > 140 ? "Significantly above national average - expensive" :
+      m.costIndex > 125 ? "Well above national average" :
+      m.costIndex > 110 ? "Moderately above national average" :
+      m.costIndex > 100 ? "Slightly above national average" :
+      "Near or below national average",
+    m.medianRentNumeric > 2200 ? "Rent is very high - budget carefully" :
+      m.medianRentNumeric > 1800 ? "Rent is high" :
+      m.medianRentNumeric > 1400 ? "Rent is moderate for the region" :
+      "Rent is relatively affordable",
+  ];
+}
+
+function detailsAirQuality(m) {
+  return [
+    `Median AQI: ${m.aqiMedian}`,
+    `~${m.goodAQIDays} "Good" air quality days per year (AQI < 50)`,
+    m.aqiMedian < 30 ? "Excellent air quality year-round" :
+      m.aqiMedian < 45 ? "Generally good air quality" :
+      m.aqiMedian < 55 ? "Moderate air quality - occasional haze" :
+      "Air quality can be poor; wildfire smoke possible in summer",
+    "Source: EPA AirData annual summary (2023)",
+  ];
+}
+
+function detailsJobMarket(m) {
+  return [
+    `Unemployment rate: ${m.unemploymentRate}%`,
+    `Remote work adoption: ~${m.remoteWorkPct}% of workforce`,
+    `Median household income: $${fmt(m.medianIncome)}`,
+    m.remoteWorkPct >= 30 ? "Strong remote work culture" :
+      m.remoteWorkPct >= 20 ? "Growing remote work presence" :
+      "Limited remote work compared to larger metros",
+    "Sources: BLS, Census ACS, FRED",
+  ];
+}
+
+function detailsEvents(m) {
+  return [
+    `${m.proTeams} major pro sports teams (MLB/NFL/NBA/NHL/MLS)`,
+    `${m.largeVenues} large concert venues (>5K capacity)`,
+    `~${m.annualConcerts} major touring concerts per year`,
+    `${m.musicFestivals} annual music festivals`,
+    m.proTeams >= 4 ? "Major league sports city with huge entertainment calendar" :
+      m.proTeams >= 2 ? "Multiple pro sports teams and strong venue access" :
+      m.proTeams >= 1 ? "One pro team plus solid live music scene" :
+      m.largeVenues >= 2 ? "No pro teams but strong live music and college scene" :
+      "Intimate venues and festival-driven scene",
+  ];
+}
+
+function detailsDating(m) {
+  const ratio = m.femaleMaleRatio;
+  const women100Men = Math.round(ratio * 100);
+  const femaleShare = ratio / (1 + ratio);
+  const poolSize = Math.round(
+    m.metroPop * (m.pctAge25_34 / 100) * (m.singlesPct25_34 / 100) * femaleShare
+  );
+  return [
+    `Estimated pool: ~${fmt(poolSize)} single women ages 25-34 in metro`,
+    `Gender ratio: ${women100Men} women per 100 men (ages 25-34)`,
+    `${m.singlesPct25_34}% of 25-34 year-olds are single, ${m.pctAge25_34}% of population is 25-34`,
+    poolSize >= 30000 ? "Huge dating pool - options abound" :
+      poolSize >= 10000 ? "Large dating pool" :
+      poolSize >= 3000 ? "Moderate dating pool" :
+      poolSize >= 1000 ? "Small dating pool - you'll see familiar faces" :
+      "Very small dating pool - expect limited local options",
+    ratio >= 1.05 ? "Female-skewed - favorable odds for straight men" :
+      ratio >= 0.98 ? "Near-balanced gender ratio" :
+      ratio >= 0.93 ? "Slightly male-skewed - more competition" :
+      "Significantly male-skewed - tough odds for straight men",
+  ];
+}
+
+// Dispatch table - each category key maps to a function that produces its detail array
+const detailGenerators = {
+  recovery: detailsRecovery,
+  meditation: detailsMeditation,
+  healthWellness: detailsHealthWellness,
+  gyms: detailsGyms,
+  nutrition: detailsNutrition,
+  socialCommunity: detailsSocialCommunity,
+  walkability: detailsWalkability,
+  outdoorRec: detailsOutdoorRec,
+  safety: detailsSafety,
+  climate: detailsClimate,
+  affordability: detailsAffordability,
+  airQuality: detailsAirQuality,
+  jobMarket: detailsJobMarket,
+  events: detailsEvents,
+  dating: detailsDating,
+};
+
+function generateAllDetails(cityId) {
   const m = rawMetrics[cityId];
   if (!m) return {};
   const details = {};
-  if (m.climate) {
-    details.climate = [
-      `${m.climate.sunshineDays} days of sunshine per year`,
-      `Summer highs average ${m.climate.avgHighSummer}°F (July)`,
-      `Winter lows average ${m.climate.avgLowWinter}°F (January)`,
-      `${m.climate.annualSnowfall}" annual snowfall`,
-      m.climate.annualSnowfall > 100 ? "Heavy snow - great for skiing, cold winters" :
-        m.climate.annualSnowfall > 50 ? "Moderate snow with four-season climate" :
-        "Light to moderate snowfall",
-    ];
-  }
-  if (m.affordability) {
-    details.affordability = [
-      `Cost-of-living index: ${m.affordability.costIndex} (national avg = 100)`,
-      `Median rent: $${m.affordability.medianRentNumeric.toLocaleString()}/month`,
-      m.affordability.costIndex > 130 ? "Significantly above national average" :
-        m.affordability.costIndex > 115 ? "Moderately above national average" :
-        m.affordability.costIndex > 105 ? "Slightly above national average" :
-        "Near or below national average",
-      m.affordability.medianRentNumeric > 2000 ? "Rent is high - budget carefully" :
-        m.affordability.medianRentNumeric > 1500 ? "Rent is moderate for the region" :
-        "Rent is relatively affordable",
-    ];
-  }
-  if (m.airQuality) {
-    details.airQuality = [
-      `Median AQI: ${m.airQuality.aqiMedian}`,
-      `${m.airQuality.goodAQIDays} "Good" air quality days per year (AQI < 50)`,
-      m.airQuality.aqiMedian < 30 ? "Excellent air quality year-round" :
-        m.airQuality.aqiMedian < 50 ? "Generally good air quality" :
-        "Air quality can be moderate; wildfire smoke possible in summer",
-      "Source: EPA AirData annual summary (2023)",
-    ];
-  }
-  if (m.jobMarket) {
-    details.jobMarket = [
-      `Unemployment rate: ${m.jobMarket.unemploymentRate}%`,
-      `Remote work adoption: ~${m.jobMarket.remoteWorkPct}% of workforce`,
-      `Median household income: $${m.jobMarket.medianIncome.toLocaleString()}`,
-      m.jobMarket.remoteWorkPct >= 25 ? "Strong remote work culture" :
-        m.jobMarket.remoteWorkPct >= 18 ? "Growing remote work presence" :
-        "Limited remote work compared to larger metros",
-      "Sources: BLS, Census ACS, FRED",
-    ];
-  }
-  if (m.walkability) {
-    const ws = m.walkability.walkScore;
-    const classification =
-      ws >= 90 ? "Walker's Paradise - walk to almost everything" :
-      ws >= 70 ? "Very Walkable - most errands on foot" :
-      ws >= 50 ? "Somewhat Walkable - some errands on foot" :
-      ws >= 25 ? "Car-Dependent - most errands require a car" :
-      "Car-Dependent - almost all errands require a car";
-    details.walkability = [
-      `Walk Score: ${ws}/100`,
-      classification,
-      ws >= 70 ? "No car needed for daily life" : ws >= 50 ? "Car helpful but not essential" : "Car essential",
-      "Source: WalkScore.com",
-    ];
-  }
-  if (m.dating) {
-    const ratio = m.dating.femaleMaleRatio;
-    const women100Men = Math.round(ratio * 100);
-    const femaleShare = ratio / (1 + ratio);
-    const poolSize = Math.round(
-      m.dating.metroPop * (m.dating.pctAge25_34 / 100) * (m.dating.singlesPct25_34 / 100) * femaleShare
-    );
-    details.dating = [
-      `Estimated pool: ~${poolSize.toLocaleString()} single women ages 25-34 in metro`,
-      `Gender ratio: ${women100Men} women per 100 men (ages 25-34)`,
-      `${m.dating.singlesPct25_34}% of 25-34 year-olds are single, ${m.dating.pctAge25_34}% of population is 25-34`,
-      poolSize >= 30000 ? "Huge dating pool - options abound" :
-        poolSize >= 10000 ? "Large dating pool" :
-        poolSize >= 3000 ? "Moderate dating pool" :
-        poolSize >= 1000 ? "Small dating pool - you'll see familiar faces" :
-        "Very small dating pool - expect limited local options",
-      ratio >= 1.05 ? "Female-skewed - favorable odds for straight men" :
-        ratio >= 0.98 ? "Near-balanced gender ratio" :
-        ratio >= 0.93 ? "Slightly male-skewed - more competition" :
-        "Significantly male-skewed - tough odds for straight men",
-      "Scored from straight male perspective. Sources: Census ACS, Data USA",
-    ];
-  }
-  if (m.events) {
-    details.events = [
-      `${m.events.proTeams} major pro sports teams (MLB/NFL/NBA/NHL/MLS)`,
-      `${m.events.largeVenues} large concert venues (>5K capacity)`,
-      `~${m.events.annualConcerts} major concerts per year`,
-      `${m.events.musicFestivals} annual music festivals`,
-      m.events.proTeams >= 3 ? "Major league sports city with vibrant entertainment" :
-        m.events.proTeams >= 1 ? "Pro sports presence with good venue access" :
-        m.events.largeVenues >= 2 ? "Strong live music and college/minor league scene" :
-        "Intimate venues and festival-driven scene",
-    ];
-  }
-  // Augment socialCommunity with intramural/running club counts if present
-  if (m.socialCommunity && (m.socialCommunity.intramuralLeagues !== undefined || m.socialCommunity.runningClubs !== undefined)) {
-    details.socialCommunity = [
-      `Walk Score: ${m.socialCommunity.walkScore}/100`,
-      `~${m.socialCommunity.intramuralLeagues || 0} intramural sports leagues (kickball, volleyball, etc.)`,
-      `~${m.socialCommunity.runningClubs || 0} running clubs and groups`,
-      m.socialCommunity.outdoorGroupsScore === 3 ? "Abundant outdoor/wellness groups" :
-        m.socialCommunity.outdoorGroupsScore === 2 ? "Moderate outdoor/wellness groups" :
-        "Limited outdoor/wellness groups",
-      (m.socialCommunity.intramuralLeagues || 0) >= 10 ? "Excellent for meeting young active professionals" :
-        (m.socialCommunity.intramuralLeagues || 0) >= 5 ? "Good sports/social league options" :
-        "Small but active community",
-    ];
+  for (const [key, fn] of Object.entries(detailGenerators)) {
+    if (m[key]) {
+      details[key] = fn(m[key]);
+    }
   }
   return details;
 }
 
-// Compute scores from raw metrics and override hardcoded scores
+// Compute scores from raw metrics and generate all detail text dynamically
 const cities = citiesRaw.map((city) => {
   const computed = computeScores(city.id);
-  const newDetails = generateNewDetails(city.id);
+  const details = generateAllDetails(city.id);
+  // Dynamic details take precedence over any legacy hardcoded details
   return {
     ...city,
     scores: computed || city.scores,
-    details: { ...city.details, ...newDetails },
+    details: { ...city.details, ...details },
   };
 });
 

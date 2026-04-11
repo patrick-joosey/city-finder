@@ -1641,8 +1641,9 @@ export const categories = [
   { key: "gyms", label: "Gyms & Fitness", icon: "💪", color: "#FF6B6B" },
   { key: "nutrition", label: "Nutrition & Health Food", icon: "🥗", color: "#FFA726" },
   { key: "socialCommunity", label: "Healthy Social & Community", icon: "🤝", color: "#42A5F5" },
+  { key: "walkability", label: "Walkability", icon: "🚶", color: "#26C6DA" },
   { key: "outdoorRec", label: "Outdoor Recreation", icon: "🏔️", color: "#66BB6A" },
-  { key: "safety", label: "Safety & Crime", icon: "🛡️", color: "#AB47BC" },
+  { key: "safety", label: "Crime", icon: "🛡️", color: "#AB47BC" },
   { key: "climate", label: "Climate & Weather", icon: "☀️", color: "#FFD54F" },
   { key: "affordability", label: "Affordability", icon: "💰", color: "#81C784" },
   { key: "airQuality", label: "Air Quality", icon: "🌬️", color: "#80DEEA" },
@@ -1699,6 +1700,21 @@ function generateNewDetails(cityId) {
         m.jobMarket.remoteWorkPct >= 18 ? "Growing remote work presence" :
         "Limited remote work compared to larger metros",
       "Sources: BLS, Census ACS, FRED",
+    ];
+  }
+  if (m.walkability) {
+    const ws = m.walkability.walkScore;
+    const classification =
+      ws >= 90 ? "Walker's Paradise - walk to almost everything" :
+      ws >= 70 ? "Very Walkable - most errands on foot" :
+      ws >= 50 ? "Somewhat Walkable - some errands on foot" :
+      ws >= 25 ? "Car-Dependent - most errands require a car" :
+      "Car-Dependent - almost all errands require a car";
+    details.walkability = [
+      `Walk Score: ${ws}/100`,
+      classification,
+      ws >= 70 ? "No car needed for daily life" : ws >= 50 ? "Car helpful but not essential" : "Car essential",
+      "Source: WalkScore.com",
     ];
   }
   if (m.dating) {

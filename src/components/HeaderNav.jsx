@@ -6,6 +6,7 @@ const TABS = [
   { view: "grid", label: "All Cities" },
   { view: "dashboard", label: "My Picks" },
   { view: "rankings", label: "Rankings" },
+  { view: "table", label: "Table" },
   { view: "travel", label: "Travel Time" },
   { view: "methodology", label: "Raw Data" },
 ];

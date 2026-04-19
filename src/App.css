@@ -800,6 +800,129 @@ body {
 .btn-fav-active { background: #ffd54f; color: #000; }
 
 /* === PERSONAL NOTES === */
+/* === TABLE VIEW === */
+.table-view { max-width: 1400px; margin: 0 auto; }
+.table-header { margin-bottom: 1rem; }
+.table-header h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.table-subtitle { color: var(--text-dim); font-size: 0.85rem; }
+
+.table-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.table-tab {
+  padding: 0.4rem 0.85rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 6px 6px 0 0;
+  border-bottom-color: transparent;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.table-tab:hover {
+  background: var(--bg-surface);
+  color: var(--text);
+}
+.table-tab.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.table-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+.city-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.city-table th,
+.city-table td {
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.city-table th {
+  background: var(--bg-surface);
+  font-weight: 600;
+  color: var(--text-dim);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.city-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.city-table th.sortable:hover {
+  color: var(--accent);
+}
+.city-table th.num, .city-table td.num {
+  text-align: right;
+}
+.city-table tr:hover td { background: rgba(78, 203, 113, 0.05); }
+.city-table tr:last-child td { border-bottom: none; }
+
+.table-city-name {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.88rem;
+  text-align: left;
+}
+.table-city-name:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.table-state {
+  color: var(--accent2);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.table-metro {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+.score-cell {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+.score-cell-header {
+  font-size: 0.75rem;
+}
+.overall-col {
+  background: rgba(78, 203, 113, 0.04);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.table-empty {
+  padding: 2rem !important;
+  text-align: center !important;
+  color: var(--text-dim);
+}
+.table-footnote {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  padding: 0.25rem 0.5rem;
+}
+
 /* === CITY GALLERY (detail page) === */
 .city-gallery { margin-bottom: 2rem; }
 .city-gallery-title {

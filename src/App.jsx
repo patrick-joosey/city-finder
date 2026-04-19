@@ -9,6 +9,7 @@ import MethodologyView from "./components/MethodologyView";
 import DecisionDashboard from "./components/DecisionDashboard";
 import TravelTimeView from "./components/TravelTimeView";
 import RankingsView from "./components/RankingsView";
+import TableView from "./components/TableView";
 import HeaderNav from "./components/HeaderNav";
 import FilterControls from "./components/FilterControls";
 import GridToolbar from "./components/GridToolbar";
@@ -158,6 +159,14 @@ function App() {
 
         {view === "rankings" && (
           <RankingsView
+            cities={cities}
+            weights={filters.weights}
+            onSelectCity={openDetail}
+          />
+        )}
+
+        {view === "table" && (
+          <TableView
             cities={cities}
             weights={filters.weights}
             onSelectCity={openDetail}

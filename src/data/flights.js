@@ -81,6 +81,30 @@ export const cityFlights = {
   34: { airportCode: "BWI", airportName: "BWI (drive)", nonstop: null, flightTime: "Drive 1h", flightTimeHours: 0, avgCostUsd: 0, distanceMiles: 38, lat: 39.1754, lon: -76.6685, notes: "Drive to BWI ~1h; no flight needed" },
   // Frederick, MD
   35: { airportCode: "BWI", airportName: "BWI (drive)", nonstop: null, flightTime: "Drive 55m", flightTimeHours: 0, avgCostUsd: 0, distanceMiles: 50, lat: 39.1754, lon: -76.6685, notes: "Drive to BWI ~55 min; no flight needed" },
+  // Nashville: The Gulch
+  36: { airportCode: "BNA", airportName: "Nashville International", nonstop: true, flightTime: "2h 0m", flightTimeHours: 2.0, avgCostUsd: 90, distanceMiles: 586, lat: 36.1245, lon: -86.6782, notes: "Nonstop Southwest ~30 flights/week" },
+  // Nashville: East Nashville
+  37: { airportCode: "BNA", airportName: "Nashville International", nonstop: true, flightTime: "2h 0m", flightTimeHours: 2.0, avgCostUsd: 90, distanceMiles: 586, lat: 36.1245, lon: -86.6782, notes: "Nonstop Southwest ~30 flights/week" },
+  // Charleston: Downtown
+  38: { airportCode: "CHS", airportName: "Charleston International", nonstop: true, flightTime: "1h 50m", flightTimeHours: 1.83, avgCostUsd: 80, distanceMiles: 470, lat: 32.8986, lon: -80.0405, notes: "Nonstop Southwest ~21 flights/week" },
+  // Charleston: Park Circle
+  39: { airportCode: "CHS", airportName: "Charleston International", nonstop: true, flightTime: "1h 50m", flightTimeHours: 1.83, avgCostUsd: 80, distanceMiles: 470, lat: 32.8986, lon: -80.0405, notes: "Nonstop Southwest ~21 flights/week" },
+  // Raleigh: Downtown
+  40: { airportCode: "RDU", airportName: "Raleigh-Durham International", nonstop: true, flightTime: "1h 20m", flightTimeHours: 1.33, avgCostUsd: 75, distanceMiles: 256, lat: 35.8776, lon: -78.7875, notes: "Nonstop Southwest ~35 flights/week, ~5/day" },
+  // Durham: Bull City
+  41: { airportCode: "RDU", airportName: "Raleigh-Durham International", nonstop: true, flightTime: "1h 20m", flightTimeHours: 1.33, avgCostUsd: 75, distanceMiles: 256, lat: 35.8776, lon: -78.7875, notes: "Nonstop Southwest ~35 flights/week, ~5/day" },
+  // SLC: Downtown/Sugar House
+  42: { airportCode: "SLC", airportName: "Salt Lake City International", nonstop: true, flightTime: "4h 0m", flightTimeHours: 4.0, avgCostUsd: 155, distanceMiles: 1859, lat: 40.7899, lon: -111.9791, notes: "Nonstop Delta and Southwest" },
+  // SLC: 9th & 9th
+  43: { airportCode: "SLC", airportName: "Salt Lake City International", nonstop: true, flightTime: "4h 0m", flightTimeHours: 4.0, avgCostUsd: 155, distanceMiles: 1859, lat: 40.7899, lon: -111.9791, notes: "Nonstop Delta and Southwest" },
+  // Scottsdale: Old Town
+  44: { airportCode: "PHX", airportName: "Phoenix Sky Harbor", nonstop: true, flightTime: "4h 10m", flightTimeHours: 4.17, avgCostUsd: 115, distanceMiles: 2000, lat: 33.4373, lon: -112.0078, notes: "Nonstop Southwest and American" },
+  // Phoenix: Arcadia
+  45: { airportCode: "PHX", airportName: "Phoenix Sky Harbor", nonstop: true, flightTime: "4h 10m", flightTimeHours: 4.17, avgCostUsd: 115, distanceMiles: 2000, lat: 33.4373, lon: -112.0078, notes: "Nonstop Southwest and American" },
+  // Minneapolis: Uptown/Lakes
+  46: { airportCode: "MSP", airportName: "Minneapolis-St Paul International", nonstop: true, flightTime: "2h 45m", flightTimeHours: 2.75, avgCostUsd: 100, distanceMiles: 934, lat: 44.8848, lon: -93.2223, notes: "Nonstop Delta, Southwest, Sun Country" },
+  // Minneapolis: North Loop
+  47: { airportCode: "MSP", airportName: "Minneapolis-St Paul International", nonstop: true, flightTime: "2h 45m", flightTimeHours: 2.75, avgCostUsd: 100, distanceMiles: 934, lat: 44.8848, lon: -93.2223, notes: "Nonstop Delta, Southwest, Sun Country" },
 };
 
 export const VIEW_W = 975;

@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { geoAlbersUsa, geoPath } from "d3-geo";
-import { feature, mesh } from "topojson-client";
 import cities from "../data/cities";
 import { cityFlights, destination, VIEW_BOX, VIEW_W, VIEW_H } from "../data/flights";
+import { loadUsAtlas, getCachedAtlas, getAtlasMesh } from "../data/usAtlas";
 
 // d3-geo albersUsa projection scaled to fit our viewBox
 const projection = geoAlbersUsa().scale(1280).translate([VIEW_W / 2, VIEW_H / 2]);
@@ -19,25 +19,29 @@ const BWI_COORDS = project(destination.lat, destination.lon);
 export default function TravelTimeView({ onBack, onSelectCity }) {
   const [hoveredId, setHoveredId] = useState(null);
   const [sortBy, setSortBy] = useState("time");
-  const [usGeo, setUsGeo] = useState(null);
+  const [atlasLoaded, setAtlasLoaded] = useState(!!getCachedAtlas());
 
-  // Load US TopoJSON on mount
+  // Atlas is fetched (and cached) on module import via usAtlas.js. We just
+  // need to re-render when it finishes if it wasn't ready on first mount.
   useEffect(() => {
-    fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json")
-      .then((res) => res.json())
-      .then((data) => setUsGeo(data))
-      .catch((err) => console.error("Failed to load US atlas:", err));
-  }, []);
+    if (atlasLoaded) return;
+    let cancelled = false;
+    loadUsAtlas()
+      .then(() => !cancelled && setAtlasLoaded(true))
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [atlasLoaded]);
 
   const { nationPath, statesMeshPath } = useMemo(() => {
-    if (!usGeo) return { nationPath: "", statesMeshPath: "" };
-    const nation = feature(usGeo, usGeo.objects.nation);
-    const statesMesh = mesh(usGeo, usGeo.objects.states, (a, b) => a !== b);
+    if (!atlasLoaded) return { nationPath: "", statesMeshPath: "" };
+    const { nation, statesMesh } = getAtlasMesh();
     return {
       nationPath: pathGen(nation) || "",
       statesMeshPath: pathGen(statesMesh) || "",
     };
-  }, [usGeo]);
+  }, [atlasLoaded]);
 
   const citiesWithFlights = cities
     .filter((c) => cityFlights[c.id])
@@ -92,7 +96,19 @@ export default function TravelTimeView({ onBack, onSelectCity }) {
       </div>
 
       <div className="travel-map-wrapper">
-        <svg viewBox={VIEW_BOX} className="travel-map" preserveAspectRatio="xMidYMid meet">
+        <svg
+          viewBox={VIEW_BOX}
+          className="travel-map"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-labelledby="travel-map-title travel-map-desc"
+        >
+          <title id="travel-map-title">Flight paths from each city to Baltimore (BWI)</title>
+          <desc id="travel-map-desc">
+            US map showing airports for every city in the list, with curved arcs drawn to BWI.
+            Solid arcs are nonstop flights; dashed arcs require a connection. Colors indicate flight time:
+            green under 2.5 hours, orange 2.5 to 5 hours, red over 5 hours.
+          </desc>
           <defs>
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur stdDeviation="3" result="blur" />

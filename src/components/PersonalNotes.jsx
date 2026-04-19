@@ -82,12 +82,13 @@ export default function PersonalNotes({ cityId, userData, onUpdate }) {
             <button onClick={handleAddPro}>+</button>
           </div>
           <ul>
-            {pros.map((item, i) => (
-              <li key={i}>
-                <span>{item}</span>
+            {pros.map((item) => (
+              <li key={item.id}>
+                <span>{item.text}</span>
                 <button
                   className="pn-remove"
-                  onClick={() => onUpdate.removePro(cityId, i)}
+                  aria-label={`Remove pro: ${item.text}`}
+                  onClick={() => onUpdate.removePro(cityId, item.id)}
                 >
                   x
                 </button>
@@ -109,12 +110,13 @@ export default function PersonalNotes({ cityId, userData, onUpdate }) {
             <button onClick={handleAddCon}>+</button>
           </div>
           <ul>
-            {cons.map((item, i) => (
-              <li key={i}>
-                <span>{item}</span>
+            {cons.map((item) => (
+              <li key={item.id}>
+                <span>{item.text}</span>
                 <button
                   className="pn-remove"
-                  onClick={() => onUpdate.removeCon(cityId, i)}
+                  aria-label={`Remove con: ${item.text}`}
+                  onClick={() => onUpdate.removeCon(cityId, item.id)}
                 >
                   x
                 </button>

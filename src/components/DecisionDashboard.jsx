@@ -78,8 +78,8 @@ export default function DecisionDashboard({ cities, userData, onUpdate, onSelect
                         <div className="dash-pros">
                           <strong>Pros:</strong>
                           <ul>
-                            {entry.pros.map((p, i) => (
-                              <li key={i}>{p}</li>
+                            {entry.pros.map((p) => (
+                              <li key={p.id}>{p.text}</li>
                             ))}
                           </ul>
                         </div>
@@ -88,8 +88,8 @@ export default function DecisionDashboard({ cities, userData, onUpdate, onSelect
                         <div className="dash-cons">
                           <strong>Cons:</strong>
                           <ul>
-                            {entry.cons.map((c, i) => (
-                              <li key={i}>{c}</li>
+                            {entry.cons.map((c) => (
+                              <li key={c.id}>{c.text}</li>
                             ))}
                           </ul>
                         </div>

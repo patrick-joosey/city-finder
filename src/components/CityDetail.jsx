@@ -2,6 +2,7 @@ import { categories } from "../data/cities";
 import { citySources } from "../data/sources";
 import ScoreBar from "./ScoreBar";
 import PersonalNotes from "./PersonalNotes";
+import CityGallery from "./CityGallery";
 
 export default function CityDetail({ city, onBack, userData }) {
   const overallScore =
@@ -64,6 +65,12 @@ export default function CityDetail({ city, onBack, userData }) {
       </div>
 
       <p className="detail-summary">{city.summary}</p>
+
+      <CityGallery
+        hero={city.image}
+        gallery={city.gallery}
+        cityName={city.name}
+      />
 
       {/* Personal Notes Section */}
       {userData && (

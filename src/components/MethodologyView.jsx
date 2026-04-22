@@ -1,6 +1,16 @@
 import cities, { categories } from "../data/cities";
 import { formulas, rawMetrics } from "../data/metrics";
 import { citySources } from "../data/sources";
+import generatedMeta from "../data/generated/meta.json";
+
+function formatDate(iso) {
+  if (!iso) return "unknown";
+  try {
+    return new Date(iso).toISOString().slice(0, 10);
+  } catch {
+    return iso;
+  }
+}
 
 export default function MethodologyView({ onBack }) {
   return (
@@ -229,6 +239,13 @@ export default function MethodologyView({ onBack }) {
         <p style={{ marginTop: "0.5rem" }}>
           Data was collected in early 2026. Numbers may have changed. We recommend verifying
           current data and visiting in person before making a relocation decision.
+        </p>
+        <p className="data-provenance" style={{ marginTop: "0.75rem", fontSize: "0.85rem", opacity: 0.75 }}>
+          <strong>Demographics (jobMarket, youngAdults, dating):</strong>{" "}
+          {generatedMeta.source} {generatedMeta.vintage ? `(vintage ${generatedMeta.vintage})` : ""}
+          {" · "}refreshed {formatDate(generatedMeta.fetchedAt)}
+          {" · "}{generatedMeta.cityCount} cities
+          {generatedMeta.errors?.length ? ` · ${generatedMeta.errors.length} errors` : ""}
         </p>
       </section>
     </div>

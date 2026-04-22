@@ -1,5 +1,14 @@
 import { describe, it, expect } from "vitest";
 import { formulas, rawMetrics, computeScores } from "./metrics";
+import geoids from "../../pipeline/city-geoids.json";
+import generatedMetrics from "./generated/rawMetrics.json";
+import generatedMeta from "./generated/meta.json";
+
+const GENERATED_FIELDS_BY_CATEGORY = {
+  jobMarket: ["unemploymentRate", "remoteWorkPct", "medianIncome"],
+  youngAdults: ["pctAge25_34", "metroPop"],
+  dating: ["metroPop", "femaleMaleRatio", "singlesPct25_34", "pctAge25_34"],
+};
 
 // Smoke tests — every formula should:
 //   * exist with a .compute() function
@@ -146,5 +155,72 @@ describe("computeScores()", () => {
 
   it("returns null for an unknown city id", () => {
     expect(computeScores(99999)).toBeNull();
+  });
+});
+
+describe("generated demographics JSON", () => {
+  const geoidIds = Object.keys(geoids).filter((k) => !k.startsWith("_"));
+
+  it("has meta with expected shape", () => {
+    expect(generatedMeta.source).toMatch(/Census/i);
+    expect(typeof generatedMeta.vintage).toBe("number");
+    expect(typeof generatedMeta.fetchedAt).toBe("string");
+    expect(Array.isArray(generatedMeta.stateFipsFetched)).toBe(true);
+    expect(generatedMeta.cityCount).toBe(geoidIds.length);
+  });
+
+  it("covers every city in city-geoids.json", () => {
+    for (const id of geoidIds) {
+      expect(generatedMetrics[id], `generated JSON missing city ${id}`).toBeDefined();
+    }
+  });
+
+  it("fills all nine generated fields for every city", () => {
+    for (const id of geoidIds) {
+      const entry = generatedMetrics[id];
+      for (const [category, fields] of Object.entries(GENERATED_FIELDS_BY_CATEGORY)) {
+        for (const field of fields) {
+          const val = entry[category]?.[field];
+          expect(val, `city ${id} missing ${category}.${field}`).not.toBeUndefined();
+          if (val !== null) {
+            expect(Number.isFinite(val), `city ${id} ${category}.${field} not finite: ${val}`).toBe(true);
+          }
+        }
+      }
+    }
+  });
+
+  it("marks parentId-inherited cities with _inheritedFromId", () => {
+    for (const [id, entry] of Object.entries(geoids)) {
+      if (id.startsWith("_")) continue;
+      if (entry.parentId != null) {
+        expect(generatedMetrics[id]._inheritedFromId).toBe(entry.parentId);
+      } else {
+        expect(generatedMetrics[id]._inheritedFromId).toBeUndefined();
+      }
+    }
+  });
+});
+
+describe("rawMetrics (merged static + generated)", () => {
+  it("exposes the generated demographics on every city", () => {
+    for (const id of Object.keys(generatedMetrics)) {
+      const m = rawMetrics[id];
+      expect(m, `rawMetrics missing city ${id}`).toBeDefined();
+      for (const [category, fields] of Object.entries(GENERATED_FIELDS_BY_CATEGORY)) {
+        for (const field of fields) {
+          const val = m[category]?.[field];
+          expect(val, `merged city ${id} missing ${category}.${field}`).not.toBeUndefined();
+        }
+      }
+    }
+  });
+
+  it("keeps static-only categories intact after merge", () => {
+    // Spot-check: Boulder (id=1) should still have its static safety/recovery data.
+    const boulder = rawMetrics["1"];
+    expect(boulder.safety).toBeDefined();
+    expect(typeof boulder.safety.violentPer1k).toBe("number");
+    expect(boulder.recovery).toBeDefined();
   });
 });

@@ -25,3 +25,8 @@ dist-ssr
 
 # Claude Code local tooling
 .claude/
+
+# Data pipeline
+pipeline/.cache/
+pipeline/output/
+.env.local

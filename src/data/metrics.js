@@ -1,6 +1,12 @@
 // Raw metrics and scoring formulas for all locations.
 // Each score is computed from measurable data points using the formulas defined below.
 //
+// Some fields are owned by the data pipeline (see pipeline/variables.js
+// GENERATED_FIELDS_BY_CATEGORY) and are filled in at module-load time by
+// merging src/data/generated/rawMetrics.json over the static data below.
+
+import generatedMetrics from "./generated/rawMetrics.json";
+//
 // ============================================================
 // SCORING FORMULAS — coefficient conventions
 // ============================================================
@@ -263,7 +269,7 @@ export const formulas = {
 // For Denver neighborhoods, per-capita gym/nutrition metrics use Denver city-wide counts
 // but neighborhood-specific population.
 
-export const rawMetrics = {
+const rawMetricsStatic = {
   // --- Boulder ---
   1: {
     safety: { violentPer1k: 5.4, propertyPer1k: 29 },
@@ -278,11 +284,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 19, annualSnowfall: 83 },
     affordability: { costIndex: 141.3, medianRentNumeric: 2100 },
     airQuality: { aqiMedian: 50, goodAQIDays: 192 },
-    jobMarket: { unemploymentRate: 4.0, remoteWorkPct: 30, medianIncome: 103994 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 2, annualConcerts: 175, musicFestivals: 4 },
     mentalHealth: { therapistsPer10k: 72.7, psychiatristsPer10k: 6.7, academicTier: 1, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 50 },
-    youngAdults: { pctAge25_34: 15, metroPop: 105000 },
-    dating: { metroPop: 105000, femaleMaleRatio: 0.92, singlesPct25_34: 70, pctAge25_34: 15 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Colorado Springs ---
   2: {
@@ -298,11 +304,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 243, avgHighSummer: 84, avgLowWinter: 18, annualSnowfall: 42 },
     affordability: { costIndex: 110.3, medianRentNumeric: 1500 },
     airQuality: { aqiMedian: 47, goodAQIDays: 240 },
-    jobMarket: { unemploymentRate: 3.7, remoteWorkPct: 18, medianIncome: 84818 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 3, annualConcerts: 125, musicFestivals: 4 },
     mentalHealth: { therapistsPer10k: 35.0, psychiatristsPer10k: 4.9, academicTier: 1, acceptingNewPatientsPct: 60, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 17, metroPop: 478000 },
-    dating: { metroPop: 478000, femaleMaleRatio: 0.88, singlesPct25_34: 55, pctAge25_34: 17 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Fort Collins ---
   3: {
@@ -318,11 +324,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 237, avgHighSummer: 83, avgLowWinter: 16, annualSnowfall: 48 },
     affordability: { costIndex: 115.7, medianRentNumeric: 1700 },
     airQuality: { aqiMedian: 51, goodAQIDays: 175 },
-    jobMarket: { unemploymentRate: 4.1, remoteWorkPct: 22, medianIncome: 85070 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 2, annualConcerts: 125, musicFestivals: 5 },
     mentalHealth: { therapistsPer10k: 43.9, psychiatristsPer10k: 4.4, academicTier: 1, acceptingNewPatientsPct: 65, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 170000 },
-    dating: { metroPop: 170000, femaleMaleRatio: 0.95, singlesPct25_34: 62, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: Capitol Hill ---
   4: {
@@ -338,11 +344,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 1643 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: Highland/LoHi ---
   9: {
@@ -358,11 +364,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 1961 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: Wash Park ---
   10: {
@@ -378,11 +384,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 2115 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: RiNo ---
   11: {
@@ -398,11 +404,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 2076 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: Baker/SoBo ---
   12: {
@@ -418,11 +424,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 1989 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Denver: Downtown ---
   13: {
@@ -438,11 +444,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 88, avgLowWinter: 16, annualSnowfall: 57 },
     affordability: { costIndex: 127.6, medianRentNumeric: 2100 },
     airQuality: { aqiMedian: 54, goodAQIDays: 131 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 21, medianIncome: 94718 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 9, annualConcerts: 700, musicFestivals: 12 },
     mentalHealth: { therapistsPer10k: 22.2, psychiatristsPer10k: 2.4, academicTier: 2, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 20, metroPop: 715000 },
-    dating: { metroPop: 715000, femaleMaleRatio: 1.04, singlesPct25_34: 65, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Durango ---
   5: {
@@ -458,11 +464,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 245, avgHighSummer: 86, avgLowWinter: 12, annualSnowfall: 67 },
     affordability: { costIndex: 117.9, medianRentNumeric: 1600 },
     airQuality: { aqiMedian: 46, goodAQIDays: 237 },
-    jobMarket: { unemploymentRate: 3.1, remoteWorkPct: 15, medianIncome: 78602 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 50, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 45.2, psychiatristsPer10k: 2.5, academicTier: 0, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 70 },
-    youngAdults: { pctAge25_34: 14, metroPop: 19000 },
-    dating: { metroPop: 19000, femaleMaleRatio: 0.97, singlesPct25_34: 58, pctAge25_34: 14 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Steamboat Springs ---
   6: {
@@ -478,11 +484,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 205, avgHighSummer: 82, avgLowWinter: 4, annualSnowfall: 165 },
     affordability: { costIndex: 138.4, medianRentNumeric: 1900 },
     airQuality: { aqiMedian: 13, goodAQIDays: 348 },
-    jobMarket: { unemploymentRate: 3.3, remoteWorkPct: 18, medianIncome: 104964 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 60, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 29.0, psychiatristsPer10k: 2.4, academicTier: 0, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 60 },
-    youngAdults: { pctAge25_34: 16, metroPop: 13000 },
-    dating: { metroPop: 13000, femaleMaleRatio: 0.94, singlesPct25_34: 60, pctAge25_34: 16 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Salida ---
   7: {
@@ -498,11 +504,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 250, avgHighSummer: 85, avgLowWinter: 10, annualSnowfall: 50 },
     affordability: { costIndex: 108.9, medianRentNumeric: 1400 },
     airQuality: { aqiMedian: 58, goodAQIDays: 66 },
-    jobMarket: { unemploymentRate: 3.6, remoteWorkPct: 15, medianIncome: 69773 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 40, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 34.0, psychiatristsPer10k: 7.3, academicTier: 0, acceptingNewPatientsPct: 60, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 11, metroPop: 6000 },
-    dating: { metroPop: 6000, femaleMaleRatio: 1.01, singlesPct25_34: 45, pctAge25_34: 11 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Carbondale ---
   8: {
@@ -518,11 +524,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 242, avgHighSummer: 87, avgLowWinter: 8, annualSnowfall: 56 },
     affordability: { costIndex: 121.9, medianRentNumeric: 1800 },
     airQuality: { aqiMedian: 54, goodAQIDays: 166 },
-    jobMarket: { unemploymentRate: 1.2, remoteWorkPct: 16, medianIncome: 108324 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 40, musicFestivals: 3 },
     mentalHealth: { therapistsPer10k: 17.0, psychiatristsPer10k: 0.8, academicTier: 0, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 13, metroPop: 7500 },
-    dating: { metroPop: 7500, femaleMaleRatio: 0.71, singlesPct25_34: 50, pctAge25_34: 13 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Westminster, MD ---
   14: {
@@ -538,11 +544,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 204, avgHighSummer: 87, avgLowWinter: 24, annualSnowfall: 26 },
     affordability: { costIndex: 113.0, medianRentNumeric: 1500 },
     airQuality: { aqiMedian: 44, goodAQIDays: 183 },
-    jobMarket: { unemploymentRate: 5.1, remoteWorkPct: 11, medianIncome: 86219 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 30, musicFestivals: 1 },
     mentalHealth: { therapistsPer10k: 9.0, psychiatristsPer10k: 3.8, academicTier: 0, acceptingNewPatientsPct: 65, insuranceAcceptancePct: 70 },
-    youngAdults: { pctAge25_34: 13, metroPop: 20000 },
-    dating: { metroPop: 20000, femaleMaleRatio: 1.03, singlesPct25_34: 50, pctAge25_34: 13 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Boise, ID ---
   15: {
@@ -558,11 +564,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 210, avgHighSummer: 94, avgLowWinter: 23, annualSnowfall: 21 },
     affordability: { costIndex: 106, medianRentNumeric: 1670 },
     airQuality: { aqiMedian: 45, goodAQIDays: 320 },
-    jobMarket: { unemploymentRate: 4.3, remoteWorkPct: 20, medianIncome: 84769 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 3, annualConcerts: 175, musicFestivals: 4 },
     mentalHealth: { therapistsPer10k: 18.3, psychiatristsPer10k: 1.6, academicTier: 0, acceptingNewPatientsPct: 60, insuranceAcceptancePct: 70 },
-    youngAdults: { pctAge25_34: 16, metroPop: 235000 },
-    dating: { metroPop: 235000, femaleMaleRatio: 0.99, singlesPct25_34: 55, pctAge25_34: 16 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Asheville, NC ---
   16: {
@@ -578,11 +584,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 212, avgHighSummer: 84, avgLowWinter: 28, annualSnowfall: 10 },
     affordability: { costIndex: 106, medianRentNumeric: 1682 },
     airQuality: { aqiMedian: 36, goodAQIDays: 340 },
-    jobMarket: { unemploymentRate: 7.3, remoteWorkPct: 18, medianIncome: 70038 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 2, annualConcerts: 250, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 31.8, psychiatristsPer10k: 1.8, academicTier: 0, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 50 },
-    youngAdults: { pctAge25_34: 18, metroPop: 95000 },
-    dating: { metroPop: 95000, femaleMaleRatio: 1.06, singlesPct25_34: 58, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Bend, OR ---
   17: {
@@ -598,11 +604,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 158, avgHighSummer: 82, avgLowWinter: 21, annualSnowfall: 27 },
     affordability: { costIndex: 127, medianRentNumeric: 1920 },
     airQuality: { aqiMedian: 38, goodAQIDays: 305 },
-    jobMarket: { unemploymentRate: 4.4, remoteWorkPct: 28, medianIncome: 93564 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 1, annualConcerts: 100, musicFestivals: 4 },
     mentalHealth: { therapistsPer10k: 43.1, psychiatristsPer10k: 5.6, academicTier: 0, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 15, metroPop: 102000 },
-    dating: { metroPop: 102000, femaleMaleRatio: 1.0, singlesPct25_34: 55, pctAge25_34: 15 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Sedona, AZ ---
   18: {
@@ -618,11 +624,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 278, avgHighSummer: 85, avgLowWinter: 29, annualSnowfall: 11 },
     affordability: { costIndex: 114.1, medianRentNumeric: 1700 },
     airQuality: { aqiMedian: 38, goodAQIDays: 330 },
-    jobMarket: { unemploymentRate: 3.0, remoteWorkPct: 35, medianIncome: 79000 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 0, annualConcerts: 40, musicFestivals: 5 },
     mentalHealth: { therapistsPer10k: 25.0, psychiatristsPer10k: 5.4, academicTier: 0, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 9, metroPop: 9800 },
-    dating: { metroPop: 9800, femaleMaleRatio: 1.05, singlesPct25_34: 40, pctAge25_34: 9 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Santa Fe, NM ---
   19: {
@@ -638,11 +644,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 300, avgHighSummer: 86, avgLowWinter: 20, annualSnowfall: 29 },
     affordability: { costIndex: 112, medianRentNumeric: 1650 },
     airQuality: { aqiMedian: 25, goodAQIDays: 340 },
-    jobMarket: { unemploymentRate: 3.3, remoteWorkPct: 17, medianIncome: 79000 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 2, annualConcerts: 125, musicFestivals: 4 },
     mentalHealth: { therapistsPer10k: 47.5, psychiatristsPer10k: 4.8, academicTier: 0, acceptingNewPatientsPct: 60, insuranceAcceptancePct: 50 },
-    youngAdults: { pctAge25_34: 12, metroPop: 92000 },
-    dating: { metroPop: 92000, femaleMaleRatio: 1.06, singlesPct25_34: 55, pctAge25_34: 12 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Canton, Baltimore ---
   20: {
@@ -658,11 +664,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 213, avgHighSummer: 87, avgLowWinter: 25, annualSnowfall: 19 },
     affordability: { costIndex: 92.6, medianRentNumeric: 1900 },
     airQuality: { aqiMedian: 32, goodAQIDays: 337 },
-    jobMarket: { unemploymentRate: 6.2, remoteWorkPct: 23, medianIncome: 89017 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.8, psychiatristsPer10k: 1.9, academicTier: 3, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 565000 },
-    dating: { metroPop: 565000, femaleMaleRatio: 1.1, singlesPct25_34: 68, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Fells Point, Baltimore ---
   21: {
@@ -678,11 +684,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 213, avgHighSummer: 87, avgLowWinter: 25, annualSnowfall: 19 },
     affordability: { costIndex: 92.6, medianRentNumeric: 2195 },
     airQuality: { aqiMedian: 32, goodAQIDays: 337 },
-    jobMarket: { unemploymentRate: 6.2, remoteWorkPct: 23, medianIncome: 91000 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.8, psychiatristsPer10k: 1.9, academicTier: 3, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 565000 },
-    dating: { metroPop: 565000, femaleMaleRatio: 1.1, singlesPct25_34: 68, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- DC: Dupont Circle / Adams Morgan ---
   22: {
@@ -698,11 +704,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 203, avgHighSummer: 88, avgLowWinter: 28, annualSnowfall: 14 },
     affordability: { costIndex: 152, medianRentNumeric: 2500 },
     airQuality: { aqiMedian: 42, goodAQIDays: 260 },
-    jobMarket: { unemploymentRate: 6.6, remoteWorkPct: 57, medianIncome: 152000 },
+    jobMarket: {},
     events: { proTeams: 5, largeVenues: 7, annualConcerts: 600, musicFestivals: 10 },
     mentalHealth: { therapistsPer10k: 6.1, psychiatristsPer10k: 0.7, academicTier: 3, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 45 },
-    youngAdults: { pctAge25_34: 22, metroPop: 690000 },
-    dating: { metroPop: 690000, femaleMaleRatio: 1.12, singlesPct25_34: 72, pctAge25_34: 22 },
+    youngAdults: {},
+    dating: {},
   },
   // --- DC: Georgetown ---
   23: {
@@ -718,11 +724,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 203, avgHighSummer: 88, avgLowWinter: 28, annualSnowfall: 14 },
     affordability: { costIndex: 152, medianRentNumeric: 2650 },
     airQuality: { aqiMedian: 42, goodAQIDays: 260 },
-    jobMarket: { unemploymentRate: 6.6, remoteWorkPct: 57, medianIncome: 194000 },
+    jobMarket: {},
     events: { proTeams: 5, largeVenues: 7, annualConcerts: 600, musicFestivals: 10 },
     mentalHealth: { therapistsPer10k: 6.1, psychiatristsPer10k: 0.7, academicTier: 3, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 45 },
-    youngAdults: { pctAge25_34: 22, metroPop: 690000 },
-    dating: { metroPop: 690000, femaleMaleRatio: 1.12, singlesPct25_34: 72, pctAge25_34: 22 },
+    youngAdults: {},
+    dating: {},
   },
   // --- DC: Columbia Heights / Petworth ---
   24: {
@@ -738,11 +744,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 203, avgHighSummer: 88, avgLowWinter: 28, annualSnowfall: 14 },
     affordability: { costIndex: 152, medianRentNumeric: 1950 },
     airQuality: { aqiMedian: 42, goodAQIDays: 260 },
-    jobMarket: { unemploymentRate: 6.6, remoteWorkPct: 57, medianIncome: 157000 },
+    jobMarket: {},
     events: { proTeams: 5, largeVenues: 7, annualConcerts: 600, musicFestivals: 10 },
     mentalHealth: { therapistsPer10k: 6.1, psychiatristsPer10k: 0.7, academicTier: 3, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 45 },
-    youngAdults: { pctAge25_34: 22, metroPop: 690000 },
-    dating: { metroPop: 690000, femaleMaleRatio: 1.12, singlesPct25_34: 72, pctAge25_34: 22 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Tampa: Hyde Park/SoHo ---
   25: {
@@ -758,11 +764,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 246, avgHighSummer: 91, avgLowWinter: 53, annualSnowfall: 0 },
     affordability: { costIndex: 110, medianRentNumeric: 2272 },
     airQuality: { aqiMedian: 28, goodAQIDays: 300 },
-    jobMarket: { unemploymentRate: 4.7, remoteWorkPct: 27, medianIncome: 120729 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.5, psychiatristsPer10k: 1.3, academicTier: 1, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 398000 },
-    dating: { metroPop: 398000, femaleMaleRatio: 1.02, singlesPct25_34: 60, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Tampa: Channelside/Harbour Island ---
   26: {
@@ -778,11 +784,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 246, avgHighSummer: 91, avgLowWinter: 53, annualSnowfall: 0 },
     affordability: { costIndex: 112, medianRentNumeric: 2348 },
     airQuality: { aqiMedian: 28, goodAQIDays: 300 },
-    jobMarket: { unemploymentRate: 4.7, remoteWorkPct: 32, medianIncome: 131778 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.5, psychiatristsPer10k: 1.3, academicTier: 1, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 398000 },
-    dating: { metroPop: 398000, femaleMaleRatio: 1.02, singlesPct25_34: 60, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Tampa: Downtown / Water Street ---
   27: {
@@ -798,11 +804,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 246, avgHighSummer: 91, avgLowWinter: 53, annualSnowfall: 0 },
     affordability: { costIndex: 112, medianRentNumeric: 2178 },
     airQuality: { aqiMedian: 28, goodAQIDays: 300 },
-    jobMarket: { unemploymentRate: 4.7, remoteWorkPct: 28, medianIncome: 88569 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.5, psychiatristsPer10k: 1.3, academicTier: 1, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 398000 },
-    dating: { metroPop: 398000, femaleMaleRatio: 1.02, singlesPct25_34: 60, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Tampa: Seminole Heights ---
   28: {
@@ -818,11 +824,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 246, avgHighSummer: 91, avgLowWinter: 53, annualSnowfall: 0 },
     affordability: { costIndex: 100, medianRentNumeric: 1620 },
     airQuality: { aqiMedian: 28, goodAQIDays: 300 },
-    jobMarket: { unemploymentRate: 4.7, remoteWorkPct: 27, medianIncome: 74081 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 4, annualConcerts: 350, musicFestivals: 6 },
     mentalHealth: { therapistsPer10k: 8.5, psychiatristsPer10k: 1.3, academicTier: 1, acceptingNewPatientsPct: 55, insuranceAcceptancePct: 65 },
-    youngAdults: { pctAge25_34: 18, metroPop: 398000 },
-    dating: { metroPop: 398000, femaleMaleRatio: 1.02, singlesPct25_34: 60, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Austin: Zilker/Barton Hills ---
   29: {
@@ -838,11 +844,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 95, avgLowWinter: 43, annualSnowfall: 0.3 },
     affordability: { costIndex: 140, medianRentNumeric: 1972 },
     airQuality: { aqiMedian: 43, goodAQIDays: 235 },
-    jobMarket: { unemploymentRate: 3.5, remoteWorkPct: 28, medianIncome: 125252 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 5, annualConcerts: 450, musicFestivals: 8 },
     mentalHealth: { therapistsPer10k: 25.1, psychiatristsPer10k: 2.5, academicTier: 1, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 20, metroPop: 975000 },
-    dating: { metroPop: 975000, femaleMaleRatio: 0.96, singlesPct25_34: 62, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Austin: East Austin ---
   30: {
@@ -858,11 +864,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 95, avgLowWinter: 43, annualSnowfall: 0.3 },
     affordability: { costIndex: 132, medianRentNumeric: 1800 },
     airQuality: { aqiMedian: 43, goodAQIDays: 235 },
-    jobMarket: { unemploymentRate: 3.5, remoteWorkPct: 30, medianIncome: 104583 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 5, annualConcerts: 450, musicFestivals: 8 },
     mentalHealth: { therapistsPer10k: 25.1, psychiatristsPer10k: 2.5, academicTier: 1, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 20, metroPop: 975000 },
-    dating: { metroPop: 975000, femaleMaleRatio: 0.96, singlesPct25_34: 62, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Austin: South Congress/Travis Heights ---
   31: {
@@ -878,11 +884,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 95, avgLowWinter: 43, annualSnowfall: 0.3 },
     affordability: { costIndex: 138, medianRentNumeric: 1950 },
     airQuality: { aqiMedian: 43, goodAQIDays: 235 },
-    jobMarket: { unemploymentRate: 3.5, remoteWorkPct: 28, medianIncome: 95000 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 5, annualConcerts: 450, musicFestivals: 8 },
     mentalHealth: { therapistsPer10k: 25.1, psychiatristsPer10k: 2.5, academicTier: 1, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 20, metroPop: 975000 },
-    dating: { metroPop: 975000, femaleMaleRatio: 0.96, singlesPct25_34: 62, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Austin: Mueller ---
   32: {
@@ -898,11 +904,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 95, avgLowWinter: 43, annualSnowfall: 0.3 },
     affordability: { costIndex: 132, medianRentNumeric: 2100 },
     airQuality: { aqiMedian: 43, goodAQIDays: 235 },
-    jobMarket: { unemploymentRate: 3.5, remoteWorkPct: 28, medianIncome: 115000 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 5, annualConcerts: 450, musicFestivals: 8 },
     mentalHealth: { therapistsPer10k: 25.1, psychiatristsPer10k: 2.5, academicTier: 1, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 55 },
-    youngAdults: { pctAge25_34: 20, metroPop: 975000 },
-    dating: { metroPop: 975000, femaleMaleRatio: 0.96, singlesPct25_34: 62, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Alexandria, VA ---
   33: {
@@ -918,11 +924,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 201, avgHighSummer: 88, avgLowWinter: 28, annualSnowfall: 14 },
     affordability: { costIndex: 144.7, medianRentNumeric: 2500 },
     airQuality: { aqiMedian: 50, goodAQIDays: 215 },
-    jobMarket: { unemploymentRate: 2.6, remoteWorkPct: 25, medianIncome: 119681 },
+    jobMarket: {},
     events: { proTeams: 5, largeVenues: 7, annualConcerts: 600, musicFestivals: 10 },
     mentalHealth: { therapistsPer10k: 24.0, psychiatristsPer10k: 1.5, academicTier: 3, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 45 },
-    youngAdults: { pctAge25_34: 19, metroPop: 160000 },
-    dating: { metroPop: 160000, femaleMaleRatio: 1.06, singlesPct25_34: 55, pctAge25_34: 19 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Arlington, VA ---
   34: {
@@ -938,11 +944,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 203, avgHighSummer: 88, avgLowWinter: 28, annualSnowfall: 14 },
     affordability: { costIndex: 140.4, medianRentNumeric: 2790 },
     airQuality: { aqiMedian: 50, goodAQIDays: 215 },
-    jobMarket: { unemploymentRate: 2.5, remoteWorkPct: 30, medianIncome: 145024 },
+    jobMarket: {},
     events: { proTeams: 5, largeVenues: 7, annualConcerts: 600, musicFestivals: 10 },
     mentalHealth: { therapistsPer10k: 24.0, psychiatristsPer10k: 1.5, academicTier: 3, acceptingNewPatientsPct: 50, insuranceAcceptancePct: 45 },
-    youngAdults: { pctAge25_34: 22, metroPop: 240000 },
-    dating: { metroPop: 240000, femaleMaleRatio: 1.02, singlesPct25_34: 60, pctAge25_34: 22 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Frederick, MD ---
   35: {
@@ -958,11 +964,11 @@ export const rawMetrics = {
     climate: { sunshineDays: 200, avgHighSummer: 86, avgLowWinter: 24, annualSnowfall: 20 },
     affordability: { costIndex: 110, medianRentNumeric: 1928 },
     airQuality: { aqiMedian: 45, goodAQIDays: 230 },
-    jobMarket: { unemploymentRate: 3.8, remoteWorkPct: 25, medianIncome: 97069 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 2, annualConcerts: 120, musicFestivals: 5 },
     mentalHealth: { therapistsPer10k: 25.5, psychiatristsPer10k: 5.0, academicTier: 0, acceptingNewPatientsPct: 65, insuranceAcceptancePct: 70 },
-    youngAdults: { pctAge25_34: 15, metroPop: 88000 },
-    dating: { metroPop: 88000, femaleMaleRatio: 1.07, singlesPct25_34: 48, pctAge25_34: 15 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Nashville: The Gulch/SoBro ---
   36: {
@@ -979,10 +985,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 205, avgHighSummer: 88, avgLowWinter: 31, annualSnowfall: 4 },
     affordability: { costIndex: 103, medianRentNumeric: 1671 },
     airQuality: { aqiMedian: 36, goodAQIDays: 270 },
-    jobMarket: { unemploymentRate: 2.5, remoteWorkPct: 22, medianIncome: 85000 },
+    jobMarket: {},
     events: { proTeams: 4, largeVenues: 5, annualConcerts: 3000, musicFestivals: 10 },
-    youngAdults: { pctAge25_34: 20, metroPop: 1960000 },
-    dating: { metroPop: 1960000, femaleMaleRatio: 1.06, singlesPct25_34: 55, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Nashville: East Nashville ---
   37: {
@@ -999,10 +1005,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 205, avgHighSummer: 88, avgLowWinter: 31, annualSnowfall: 4 },
     affordability: { costIndex: 103, medianRentNumeric: 1550 },
     airQuality: { aqiMedian: 36, goodAQIDays: 270 },
-    jobMarket: { unemploymentRate: 2.5, remoteWorkPct: 22, medianIncome: 72000 },
+    jobMarket: {},
     events: { proTeams: 4, largeVenues: 5, annualConcerts: 3000, musicFestivals: 10 },
-    youngAdults: { pctAge25_34: 20, metroPop: 1960000 },
-    dating: { metroPop: 1960000, femaleMaleRatio: 1.06, singlesPct25_34: 55, pctAge25_34: 20 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Charleston: Downtown/French Quarter ---
   38: {
@@ -1019,10 +1025,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 209, avgHighSummer: 88, avgLowWinter: 40, annualSnowfall: 0 },
     affordability: { costIndex: 112, medianRentNumeric: 1852 },
     airQuality: { aqiMedian: 30, goodAQIDays: 290 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 20, medianIncome: 75000 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 3, annualConcerts: 500, musicFestivals: 5 },
-    youngAdults: { pctAge25_34: 18, metroPop: 765000 },
-    dating: { metroPop: 765000, femaleMaleRatio: 1.06, singlesPct25_34: 52, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Charleston: Park Circle ---
   39: {
@@ -1039,10 +1045,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 209, avgHighSummer: 88, avgLowWinter: 40, annualSnowfall: 0 },
     affordability: { costIndex: 105, medianRentNumeric: 1550 },
     airQuality: { aqiMedian: 30, goodAQIDays: 290 },
-    jobMarket: { unemploymentRate: 3.9, remoteWorkPct: 20, medianIncome: 68000 },
+    jobMarket: {},
     events: { proTeams: 0, largeVenues: 3, annualConcerts: 500, musicFestivals: 5 },
-    youngAdults: { pctAge25_34: 18, metroPop: 765000 },
-    dating: { metroPop: 765000, femaleMaleRatio: 1.06, singlesPct25_34: 52, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Raleigh: Downtown ---
   40: {
@@ -1059,10 +1065,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 213, avgHighSummer: 90, avgLowWinter: 30, annualSnowfall: 4 },
     affordability: { costIndex: 106, medianRentNumeric: 1374 },
     airQuality: { aqiMedian: 33, goodAQIDays: 285 },
-    jobMarket: { unemploymentRate: 3.0, remoteWorkPct: 28, medianIncome: 103757 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 4, annualConcerts: 1000, musicFestivals: 5 },
-    youngAdults: { pctAge25_34: 18, metroPop: 1660000 },
-    dating: { metroPop: 1660000, femaleMaleRatio: 1.02, singlesPct25_34: 53, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Durham: Bull City ---
   41: {
@@ -1079,10 +1085,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 213, avgHighSummer: 90, avgLowWinter: 30, annualSnowfall: 4 },
     affordability: { costIndex: 99, medianRentNumeric: 1200 },
     airQuality: { aqiMedian: 33, goodAQIDays: 285 },
-    jobMarket: { unemploymentRate: 3.0, remoteWorkPct: 28, medianIncome: 80000 },
+    jobMarket: {},
     events: { proTeams: 2, largeVenues: 4, annualConcerts: 1000, musicFestivals: 5 },
-    youngAdults: { pctAge25_34: 18, metroPop: 1660000 },
-    dating: { metroPop: 1660000, femaleMaleRatio: 1.04, singlesPct25_34: 55, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Salt Lake City: Downtown/Sugar House ---
   42: {
@@ -1099,10 +1105,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 93, avgLowWinter: 21, annualSnowfall: 54 },
     affordability: { costIndex: 121, medianRentNumeric: 1500 },
     airQuality: { aqiMedian: 42, goodAQIDays: 275 },
-    jobMarket: { unemploymentRate: 3.3, remoteWorkPct: 20, medianIncome: 78000 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 3, annualConcerts: 400, musicFestivals: 6 },
-    youngAdults: { pctAge25_34: 16, metroPop: 1226000 },
-    dating: { metroPop: 1226000, femaleMaleRatio: 0.93, singlesPct25_34: 29, pctAge25_34: 16 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Salt Lake City: 9th & 9th ---
   43: {
@@ -1119,10 +1125,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 222, avgHighSummer: 93, avgLowWinter: 21, annualSnowfall: 54 },
     affordability: { costIndex: 121, medianRentNumeric: 1450 },
     airQuality: { aqiMedian: 42, goodAQIDays: 275 },
-    jobMarket: { unemploymentRate: 3.3, remoteWorkPct: 20, medianIncome: 83000 },
+    jobMarket: {},
     events: { proTeams: 3, largeVenues: 3, annualConcerts: 400, musicFestivals: 6 },
-    youngAdults: { pctAge25_34: 16, metroPop: 1226000 },
-    dating: { metroPop: 1226000, femaleMaleRatio: 0.93, singlesPct25_34: 29, pctAge25_34: 16 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Scottsdale: Old Town ---
   44: {
@@ -1139,10 +1145,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 299, avgHighSummer: 103, avgLowWinter: 47, annualSnowfall: 0 },
     affordability: { costIndex: 135, medianRentNumeric: 2461 },
     airQuality: { aqiMedian: 48, goodAQIDays: 260 },
-    jobMarket: { unemploymentRate: 3.1, remoteWorkPct: 20, medianIncome: 107000 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 4, annualConcerts: 800, musicFestivals: 10 },
-    youngAdults: { pctAge25_34: 15, metroPop: 4834000 },
-    dating: { metroPop: 4834000, femaleMaleRatio: 1.01, singlesPct25_34: 35, pctAge25_34: 15 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Phoenix: Arcadia ---
   45: {
@@ -1159,10 +1165,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 299, avgHighSummer: 103, avgLowWinter: 47, annualSnowfall: 0 },
     affordability: { costIndex: 103, medianRentNumeric: 1776 },
     airQuality: { aqiMedian: 48, goodAQIDays: 260 },
-    jobMarket: { unemploymentRate: 3.1, remoteWorkPct: 20, medianIncome: 77000 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 4, annualConcerts: 800, musicFestivals: 10 },
-    youngAdults: { pctAge25_34: 15, metroPop: 4834000 },
-    dating: { metroPop: 4834000, femaleMaleRatio: 1.01, singlesPct25_34: 35, pctAge25_34: 15 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Minneapolis: Uptown/Lakes ---
   46: {
@@ -1179,10 +1185,10 @@ export const rawMetrics = {
     climate: { sunshineDays: 198, avgHighSummer: 83, avgLowWinter: 8, annualSnowfall: 45 },
     affordability: { costIndex: 107, medianRentNumeric: 1600 },
     airQuality: { aqiMedian: 38, goodAQIDays: 310 },
-    jobMarket: { unemploymentRate: 3.8, remoteWorkPct: 19, medianIncome: 80000 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 5, annualConcerts: 1500, musicFestivals: 6 },
-    youngAdults: { pctAge25_34: 18, metroPop: 3039000 },
-    dating: { metroPop: 3039000, femaleMaleRatio: 0.92, singlesPct25_34: 40, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
   // --- Minneapolis: North Loop ---
   47: {
@@ -1199,12 +1205,32 @@ export const rawMetrics = {
     climate: { sunshineDays: 198, avgHighSummer: 83, avgLowWinter: 8, annualSnowfall: 45 },
     affordability: { costIndex: 107, medianRentNumeric: 1693 },
     airQuality: { aqiMedian: 38, goodAQIDays: 310 },
-    jobMarket: { unemploymentRate: 3.8, remoteWorkPct: 19, medianIncome: 85000 },
+    jobMarket: {},
     events: { proTeams: 6, largeVenues: 5, annualConcerts: 1500, musicFestivals: 6 },
-    youngAdults: { pctAge25_34: 18, metroPop: 3039000 },
-    dating: { metroPop: 3039000, femaleMaleRatio: 0.92, singlesPct25_34: 40, pctAge25_34: 18 },
+    youngAdults: {},
+    dating: {},
   },
 };
+
+// Merge pipeline-generated demographics over the hand-curated static data.
+// For the three affected categories (jobMarket, youngAdults, dating) the
+// generated fields overwrite any static values — pipeline is the source of
+// truth. Every other category passes through unchanged. Cities not present in
+// the generated JSON keep their static-only shape (empty in practice).
+export const rawMetrics = Object.fromEntries(
+  Object.entries(rawMetricsStatic).map(([id, staticCity]) => {
+    const gen = generatedMetrics[id] || {};
+    return [
+      id,
+      {
+        ...staticCity,
+        jobMarket: { ...(staticCity.jobMarket || {}), ...(gen.jobMarket || {}) },
+        youngAdults: { ...(staticCity.youngAdults || {}), ...(gen.youngAdults || {}) },
+        dating: { ...(staticCity.dating || {}), ...(gen.dating || {}) },
+      },
+    ];
+  }),
+);
 
 // ============================================================
 // COMPUTE ALL SCORES FROM RAW METRICS

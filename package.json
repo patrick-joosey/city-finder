@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "data:refresh": "node pipeline/refresh.mjs",
+    "data:refresh:dry": "node pipeline/refresh.mjs --dry-run",
+    "data:add-city": "node pipeline/add-city.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

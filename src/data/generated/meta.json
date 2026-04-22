@@ -1,0 +1,25 @@
+{
+  "source": "US Census Bureau — American Community Survey (ACS) 5-year",
+  "vintage": 2024,
+  "fetchedAt": "2026-04-19T05:03:42.487Z",
+  "pipelineVersion": "1.0.0",
+  "stateFipsFetched": [
+    "04",
+    "08",
+    "11",
+    "12",
+    "16",
+    "24",
+    "27",
+    "35",
+    "37",
+    "41",
+    "45",
+    "47",
+    "48",
+    "49",
+    "51"
+  ],
+  "cityCount": 47,
+  "errors": []
+}
